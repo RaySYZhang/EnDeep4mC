@@ -1,0 +1,100 @@
+nohup: 忽略输入
+2025-03-30 16:37:18.377086: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcudart.so.11.0
+
+=== Processing 4mC_A.thaliana ===
+Processing base models:   0%|          | 0/3 [00:00<?, ?it/s]2025-03-30 16:38:48.897691: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcuda.so.1
+2025-03-30 16:38:48.902711: E tensorflow/stream_executor/cuda/cuda_driver.cc:328] failed call to cuInit: CUDA_ERROR_NO_DEVICE: no CUDA-capable device is detected
+2025-03-30 16:38:48.902769: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:169] retrieving CUDA diagnostic information for host: kemove-X13SWA-TF
+2025-03-30 16:38:48.902775: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:176] hostname: kemove-X13SWA-TF
+2025-03-30 16:38:48.902898: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:200] libcuda reported version is: 550.120.0
+2025-03-30 16:38:48.902916: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:204] kernel reported version is: 550.120.0
+2025-03-30 16:38:48.902920: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:310] kernel version seems to match DSO: 550.120.0
+2025-03-30 16:38:48.903117: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2025-03-30 16:38:49.788900: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:176] None of the MLIR Optimization Passes are enabled (registered 2)
+2025-03-30 16:38:49.789197: I tensorflow/core/platform/profile_utils/cpu_utils.cc:114] CPU Frequency: 2500000000 Hz
+Processing base models:  33%|███▎      | 1/3 [01:36<03:13, 96.78s/it]Processing base models:  67%|██████▋   | 2/3 [03:19<01:40, 100.20s/it]Processing base models: 100%|██████████| 3/3 [12:02<00:00, 293.43s/it]Processing base models: 100%|██████████| 3/3 [12:02<00:00, 240.92s/it]encoding_TR: (251256, 888)
+encoding_TR: (251256, 888)
+TAC
+encoding_TR: (251256, 1747)
+
+
+4mC_A.thaliana 测试结果:
+ACCURACY: 0.875976
+SN: 0.885845
+SP: 0.866107
+F1: 0.877188
+MCC: 0.752099
+AUC: 0.948672
+
+=== Processing 4mC_C.elegans ===
+Processing base models:   0%|          | 0/3 [00:00<?, ?it/s]Processing base models:  33%|███▎      | 1/3 [02:49<05:39, 169.62s/it]Processing base models:  67%|██████▋   | 2/3 [03:35<01:37, 97.02s/it] Processing base models: 100%|██████████| 3/3 [05:16<00:00, 98.50s/it]Processing base models: 100%|██████████| 3/3 [05:16<00:00, 105.36s/it]encoding_TR: (137834, 1106)
+encoding_TR: (137834, 591)
+encoding_TR: (137834, 1400)
+
+
+4mC_C.elegans 测试结果:
+ACCURACY: 0.936569
+SN: 0.960649
+SP: 0.912489
+F1: 0.938060
+MCC: 0.874152
+AUC: 0.985643
+
+=== Processing 4mC_D.melanogaster ===
+Processing base models:   0%|          | 0/3 [00:00<?, ?it/s]Processing base models:  33%|███▎      | 1/3 [01:32<03:05, 92.72s/it]Processing base models:  67%|██████▋   | 2/3 [02:42<01:19, 79.30s/it]Processing base models: 100%|██████████| 3/3 [07:53<00:00, 185.21s/it]Processing base models: 100%|██████████| 3/3 [07:53<00:00, 157.96s/it]encoding_TR: (218578, 952)
+encoding_TR: (218578, 632)
+encoding_TR: (218578, 1170)
+
+
+4mC_D.melanogaster 测试结果:
+ACCURACY: 0.925286
+SN: 0.954036
+SP: 0.896536
+F1: 0.927374
+MCC: 0.851981
+AUC: 0.979865
+
+=== Processing 4mC_E.coli ===
+Processing base models:   0%|          | 0/3 [00:00<?, ?it/s]Processing base models:  33%|███▎      | 1/3 [00:00<00:01,  1.76it/s]Processing base models:  67%|██████▋   | 2/3 [00:04<00:02,  2.74s/it]Processing base models: 100%|██████████| 3/3 [00:06<00:00,  2.18s/it]Processing base models: 100%|██████████| 3/3 [00:06<00:00,  2.11s/it]
+encoding_TR: (4136, 160)
+encoding_TR: (4136, 1303)
+encoding_TR: (4136, 447)
+
+4mC_E.coli 测试结果:
+ACCURACY: 0.978125
+SN: 0.962500
+SP: 0.993750
+F1: 0.977778
+MCC: 0.956717
+AUC: 0.999297
+
+=== Processing 4mC_G.subterraneus ===
+Processing base models:   0%|          | 0/3 [00:00<?, ?it/s]Processing base models:  33%|███▎      | 1/3 [00:39<01:18, 39.37s/it]Processing base models:  67%|██████▋   | 2/3 [01:15<00:37, 37.25s/it]Processing base models: 100%|██████████| 3/3 [02:01<00:00, 41.36s/it]Processing base models: 100%|██████████| 3/3 [02:01<00:00, 40.46s/it]
+encoding_TR: (29754, 1686)
+encoding_TR: (29754, 1641)
+encoding_TR: (29754, 1518)
+
+4mC_G.subterraneus 测试结果:
+ACCURACY: 0.849546
+SN: 0.864457
+SP: 0.834635
+F1: 0.851756
+MCC: 0.699402
+AUC: 0.929147
+
+=== Processing 4mC_G.pickeringii ===
+Processing base models:   0%|          | 0/3 [00:00<?, ?it/s]Processing base models:  33%|███▎      | 1/3 [00:14<00:28, 14.49s/it]Processing base models:  67%|██████▋   | 2/3 [00:20<00:09,  9.73s/it]Processing base models: 100%|██████████| 3/3 [00:26<00:00,  7.93s/it]Processing base models: 100%|██████████| 3/3 [00:26<00:00,  8.89s/it]
+encoding_TR: (11374, 1682)
+encoding_TR: (11374, 1359)
+encoding_TR: (11374, 847)
+
+4mC_G.pickeringii 测试结果:
+ACCURACY: 0.909398
+SN: 0.928349
+SP: 0.890447
+F1: 0.911083
+MCC: 0.819384
+AUC: 0.972275
+
+最终结果已保存至: /home/zqzhangshuyu/Projs/EnDeep4mC-V2/pretrained_models/indiv/ensemble_indiv_results.csv

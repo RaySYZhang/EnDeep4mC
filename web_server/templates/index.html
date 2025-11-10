@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EnDeep4mC Predictor</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="header">
+        <h1>EnDeep4mC: 4mC Site Prediction</h1>
+        <p>A deep learning ensemble predictor for DNA 4mC modification sites. Combines CNN, BLSTM and Transformer models with advanced feature engineering.</p>
+    </div>
+
+    <div class="main-content">
+        <form id="sequenceForm">
+            <div class="form-group">
+                <label for="speciesSelect">Target Species:</label>
+                <select id="speciesSelect" required>
+                    <option value="4mC_A.thaliana">Arabidopsis thaliana</option>
+                    <option value="4mC_C.elegans">Caenorhabditis elegans</option>
+                    <option value="4mC_D.melanogaster">Drosophila melanogaster</option>
+                    <option value="4mC_E.coli">Escherichia coli</option>
+                    <option value="4mC_G.subterraneus">Geobacter subterraneus</option>
+                    <option value="4mC_G.pickeringii">Geobacter pickeringii</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="sequenceInput">DNA Sequence Input:</label>
+                <textarea 
+                    id="sequenceInput" 
+                    rows="6" 
+                    placeholder="Paste FASTA sequences here (e.g. >seq1\nATCGATCG...)"
+                ></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="sequenceFile">Or Upload FASTA File:</label>
+                <input type="file" id="sequenceFile" accept=".fasta,.txt">
+            </div>
+
+            <button type="submit">Analyze Sequences</button>
+        </form>
+
+        <div id="result"></div>
+
+        <div class="model-details">
+            <h2>Model Architecture Details</h2>
+            <div class="detail-grid">
+                <div class="detail-card">
+                    <h4>🧬 Ensemble Framework</h4>
+                    <ul class="feature-list">
+                        <li>✔️ CNN</li>
+                        <li>✔️ Bidirectional LSTM</li>
+                        <li>✔️ Transformer</li>
+                        <li>✔️ 3 Layer of Stacking Ensemble:</li>
+                        <li> • Multimodal probability generation layer</li>
+                        <li> • Meta-learning Layer(XGBoost+LightGBM)</li>
+                        <li> • ElasticNet decision fusion layer</li>
+                    </ul>
+                </div>
+
+                <div class="detail-card">
+                    <h4>⚙️ Dual-Adaptive Encoding</h4>
+                    <ul class="feature-list">
+                        <li class="full-width">14 Feature Encodings:
+                            <div class="encoding-grid">
+                                <span>• ENAC</span>
+                                <span>• Binary</span>
+                                <span>• NCP</span>
+                                <span>• EIIP</span>
+                                <span>• Kmer (k=4)</span>
+                                <span>• CKSNAP</span>
+                                <span>• PseEIIP</span>
+                                <span>• TNC</span>
+                                <span>• RCKmer</span>
+                                <span>• SCPseTNC</span>
+                                <span>• PCPseTNC</span>
+                                <span>• ANF</span>
+                                <span>• NAC</span>
+                                <span>• TAC</span>
+                            </div>
+                        </li>
+                        <div class="dual-adaptive">
+                            <div class="adaptive-section">
+                                <div class="adaptive-title">🌐 Species-Adaptive:</div>
+                                <div>• Species-specific feature ranking</div>
+                            </div>
+                            <div class="adaptive-section">
+                                <div class="adaptive-title">🤖 Model-Adaptive:</div>
+                                <div>• Models-specific feature processing</div>
+                            </div>
+                        </div>
+                    </ul>
+                </div>
+
+                <div class="detail-card">
+                    <h4>📊 Performance Metrics</h4>
+                    <ul class="feature-list">
+                        <li>Tested on 6 species</li>
+                        <li>AUC: <span class="metric-range">0.9629~0.9999</span>
+                            <span class="metric-average">0.9835 (Average)</span></li>
+                        <li>ACC: <span class="metric-range">0.9023~0.9974</span>
+                            <span class="metric-average">0.9472 (Average)</span></li>
+                        <li>F1-Score: 
+                            <span class="metric-average">0.9474 (Average)</span></li>
+                        <li>MCC: 
+                            <span class="metric-average">0.8945 (Average)</span></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Architecture Diagram Section -->
+            <div class="architecture-container">
+                <img src="{{ url_for('static', filename='Model Architecture Diagram.png') }}" 
+                     alt="Model Architecture Diagram"
+                     class="architecture-diagram">
+                <div class="diagram-caption">
+                    Integrated Deep Learning Architecture with Dual-Adaptive Encoding System
+                </div>
+            </div>
+        </div>
+
+        <div class="sample-sequences">
+            <h3>Example FASTA Format</h3>
+            <pre>>Sample_Sequence_1
+ATGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGC
+>Sample_Sequence_2
+CGATCGATCGATCGATCGATCGATCGATCGATCGATCGATCGA</pre>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

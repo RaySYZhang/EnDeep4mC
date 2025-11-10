@@ -1,0 +1,776 @@
+2025-05-19 20:26:52,570 - INFO - 未启用白名单，处理所有物种
+2025-05-19 20:26:52,571 - INFO - 将处理以下物种(18个):
+- 4mC_A.thaliana2
+- 4mC_C.elegans2
+- 4mC_D.melanogaster2
+- 4mC_G.pickeringii
+- 4mC_G.subterraneus
+- 4mC_Tolypocladium
+- 4mC_C.elegans
+- 4mC_A.thaliana
+- 4mC_F.vesca
+- 4mC_E.coli2
+- 4mC_E.coli
+- 4mC_C.equisetifolia
+- 4mC_D.melanogaster
+- 4mC_R.chinensis
+- 4mC_G.subterraneus2
+- 4mC_G.pickeringii2
+- 4mC_S.cerevisiae
+- 4mC_mouse
+2025-05-19 20:26:52,608 - INFO - 开始处理物种: 4mC_A.thaliana2
+2025-05-19 20:26:52,608 - INFO - 4mC_A.thaliana2 分类为: Plant
+2025-05-19 20:26:52,609 - ERROR - 读取 /home/zqzhangshuyu/Projs/EnDeep4mC-V2/data/4mC/4mC_A.thaliana2/train_pos.txt 失败: I/O operation on closed file.
+2025-05-19 20:26:52,609 - ERROR - 读取 /home/zqzhangshuyu/Projs/EnDeep4mC-V2/data/4mC/4mC_A.thaliana2/test_pos.txt 失败: I/O operation on closed file.
+2025-05-19 20:26:52,609 - INFO - 4mC_A.thaliana2 pos 总序列数: 0
+2025-05-19 20:26:52,609 - ERROR - 读取 /home/zqzhangshuyu/Projs/EnDeep4mC-V2/data/4mC/4mC_A.thaliana2/train_neg.txt 失败: I/O operation on closed file.
+2025-05-19 20:26:52,609 - ERROR - 读取 /home/zqzhangshuyu/Projs/EnDeep4mC-V2/data/4mC/4mC_A.thaliana2/test_neg.txt 失败: I/O operation on closed file.
+2025-05-19 20:26:52,609 - INFO - 4mC_A.thaliana2 neg 总序列数: 0
+2025-05-19 20:26:52,609 - ERROR - 4mC_A.thaliana2 无有效序列，跳过处理
+2025-05-19 20:26:52,609 - INFO - 开始处理物种: 4mC_C.elegans2
+2025-05-19 20:26:52,609 - INFO - 开始处理物种: 4mC_D.melanogaster2
+2025-05-19 20:26:52,609 - INFO - 4mC_C.elegans2 分类为: Animal
+2025-05-19 20:26:52,609 - INFO - 4mC_D.melanogaster2 分类为: Animal
+2025-05-19 20:26:52,609 - INFO - 开始处理物种: 4mC_G.pickeringii
+2025-05-19 20:26:52,610 - INFO - 4mC_G.pickeringii 分类为: Microorganism
+2025-05-19 20:26:52,610 - ERROR - 读取 /home/zqzhangshuyu/Projs/EnDeep4mC-V2/data/4mC/4mC_C.elegans2/train_pos.txt 失败: I/O operation on closed file.
+2025-05-19 20:26:52,610 - ERROR - 读取 /home/zqzhangshuyu/Projs/EnDeep4mC-V2/data/4mC/4mC_D.melanogaster2/train_pos.txt 失败: I/O operation on closed file.
+2025-05-19 20:26:52,610 - INFO - 开始处理物种: 4mC_G.subterraneus
+2025-05-19 20:26:52,610 - INFO - 开始处理物种: 4mC_F.vesca
+2025-05-19 20:26:52,610 - ERROR - 读取 /home/zqzhangshuyu/Projs/EnDeep4mC-V2/data/4mC/4mC_D.melanogaster2/test_pos.txt 失败: I/O operation on closed file.
+2025-05-19 20:26:52,610 - ERROR - 读取 /home/zqzhangshuyu/Projs/EnDeep4mC-V2/data/4mC/4mC_C.elegans2/test_pos.txt 失败: I/O operation on closed file.
+2025-05-19 20:26:52,610 - INFO - 4mC_F.vesca 分类为: Plant
+2025-05-19 20:26:52,610 - INFO - 4mC_D.melanogaster2 pos 总序列数: 0
+2025-05-19 20:26:52,610 - INFO - 4mC_G.subterraneus 分类为: Microorganism
+2025-05-19 20:26:52,610 - INFO - 4mC_C.elegans2 pos 总序列数: 0
+2025-05-19 20:26:52,610 - ERROR - 读取 /home/zqzhangshuyu/Projs/EnDeep4mC-V2/data/4mC/4mC_D.melanogaster2/train_neg.txt 失败: I/O operation on closed file.
+2025-05-19 20:26:52,610 - ERROR - 读取 /home/zqzhangshuyu/Projs/EnDeep4mC-V2/data/4mC/4mC_G.pickeringii/train_pos.txt 失败: I/O operation on closed file.
+2025-05-19 20:26:52,610 - ERROR - 读取 /home/zqzhangshuyu/Projs/EnDeep4mC-V2/data/4mC/4mC_C.elegans2/train_neg.txt 失败: I/O operation on closed file.
+2025-05-19 20:26:52,610 - ERROR - 读取 /home/zqzhangshuyu/Projs/EnDeep4mC-V2/data/4mC/4mC_D.melanogaster2/test_neg.txt 失败: I/O operation on closed file.
+2025-05-19 20:26:52,610 - INFO - 开始处理物种: 4mC_Tolypocladium
+2025-05-19 20:26:52,610 - ERROR - 读取 /home/zqzhangshuyu/Projs/EnDeep4mC-V2/data/4mC/4mC_G.pickeringii/test_pos.txt 失败: I/O operation on closed file.
+2025-05-19 20:26:52,610 - INFO - 4mC_D.melanogaster2 neg 总序列数: 0
+2025-05-19 20:26:52,610 - INFO - 4mC_G.pickeringii pos 总序列数: 0
+2025-05-19 20:26:52,610 - ERROR - 读取 /home/zqzhangshuyu/Projs/EnDeep4mC-V2/data/4mC/4mC_C.elegans2/test_neg.txt 失败: I/O operation on closed file.
+2025-05-19 20:26:52,610 - ERROR - 4mC_D.melanogaster2 无有效序列，跳过处理
+2025-05-19 20:26:52,610 - INFO - 4mC_C.elegans2 neg 总序列数: 0
+2025-05-19 20:26:52,610 - ERROR - 读取 /home/zqzhangshuyu/Projs/EnDeep4mC-V2/data/4mC/4mC_G.pickeringii/train_neg.txt 失败: I/O operation on closed file.
+2025-05-19 20:26:52,610 - ERROR - 读取 /home/zqzhangshuyu/Projs/EnDeep4mC-V2/data/4mC/4mC_G.subterraneus/train_pos.txt 失败: I/O operation on closed file.
+2025-05-19 20:26:52,610 - INFO - 4mC_Tolypocladium 分类为: Microorganism
+2025-05-19 20:26:52,610 - ERROR - 4mC_C.elegans2 无有效序列，跳过处理
+2025-05-19 20:26:52,610 - ERROR - 读取 /home/zqzhangshuyu/Projs/EnDeep4mC-V2/data/4mC/4mC_G.pickeringii/test_neg.txt 失败: I/O operation on closed file.
+2025-05-19 20:26:52,610 - ERROR - 读取 /home/zqzhangshuyu/Projs/EnDeep4mC-V2/data/4mC/4mC_G.subterraneus/test_pos.txt 失败: I/O operation on closed file.
+2025-05-19 20:26:52,610 - INFO - 4mC_G.pickeringii neg 总序列数: 0
+2025-05-19 20:26:52,610 - ERROR - 4mC_G.pickeringii 无有效序列，跳过处理
+2025-05-19 20:26:52,610 - INFO - 4mC_G.subterraneus pos 总序列数: 0
+2025-05-19 20:26:52,610 - ERROR - 读取 /home/zqzhangshuyu/Projs/EnDeep4mC-V2/data/4mC/4mC_G.subterraneus/train_neg.txt 失败: I/O operation on closed file.
+2025-05-19 20:26:52,610 - ERROR - 读取 /home/zqzhangshuyu/Projs/EnDeep4mC-V2/data/4mC/4mC_G.subterraneus/test_neg.txt 失败: I/O operation on closed file.
+2025-05-19 20:26:52,610 - INFO - 4mC_G.subterraneus neg 总序列数: 0
+2025-05-19 20:26:52,610 - ERROR - 4mC_G.subterraneus 无有效序列，跳过处理
+2025-05-19 20:26:52,611 - INFO - 开始处理物种: 4mC_E.coli2
+2025-05-19 20:26:52,611 - INFO - 开始处理物种: 4mC_E.coli
+2025-05-19 20:26:52,611 - INFO - 4mC_E.coli2 分类为: Microorganism
+2025-05-19 20:26:52,611 - INFO - 开始处理物种: 4mC_C.equisetifolia
+2025-05-19 20:26:52,611 - INFO - 4mC_E.coli 分类为: Microorganism
+2025-05-19 20:26:52,611 - INFO - 4mC_C.equisetifolia 分类为: Plant
+2025-05-19 20:26:52,611 - ERROR - 读取 /home/zqzhangshuyu/Projs/EnDeep4mC-V2/data/4mC/4mC_E.coli2/train_pos.txt 失败: I/O operation on closed file.
+2025-05-19 20:26:52,611 - INFO - 开始处理物种: 4mC_D.melanogaster
+2025-05-19 20:26:52,611 - INFO - 4mC_D.melanogaster 分类为: Animal
+2025-05-19 20:26:52,611 - ERROR - 读取 /home/zqzhangshuyu/Projs/EnDeep4mC-V2/data/4mC/4mC_E.coli2/test_pos.txt 失败: I/O operation on closed file.
+2025-05-19 20:26:52,611 - INFO - 4mC_E.coli2 pos 总序列数: 0
+2025-05-19 20:26:52,611 - ERROR - 读取 /home/zqzhangshuyu/Projs/EnDeep4mC-V2/data/4mC/4mC_D.melanogaster/train_pos.txt 失败: I/O operation on closed file.
+2025-05-19 20:26:52,611 - ERROR - 读取 /home/zqzhangshuyu/Projs/EnDeep4mC-V2/data/4mC/4mC_D.melanogaster/test_pos.txt 失败: I/O operation on closed file.
+2025-05-19 20:26:52,611 - ERROR - 读取 /home/zqzhangshuyu/Projs/EnDeep4mC-V2/data/4mC/4mC_E.coli2/train_neg.txt 失败: I/O operation on closed file.
+2025-05-19 20:26:52,611 - INFO - 4mC_C.equisetifolia train_pos.txt: 读取纯文本获得183条序列
+2025-05-19 20:26:52,611 - INFO - 4mC_D.melanogaster pos 总序列数: 0
+2025-05-19 20:26:52,611 - ERROR - 读取 /home/zqzhangshuyu/Projs/EnDeep4mC-V2/data/4mC/4mC_E.coli2/test_neg.txt 失败: I/O operation on closed file.
+2025-05-19 20:26:52,611 - ERROR - 读取 /home/zqzhangshuyu/Projs/EnDeep4mC-V2/data/4mC/4mC_D.melanogaster/train_neg.txt 失败: I/O operation on closed file.
+2025-05-19 20:26:52,610 - INFO - 开始处理物种: 4mC_C.elegans
+2025-05-19 20:26:52,611 - INFO - 4mC_E.coli2 neg 总序列数: 0
+2025-05-19 20:26:52,611 - ERROR - 读取 /home/zqzhangshuyu/Projs/EnDeep4mC-V2/data/4mC/4mC_D.melanogaster/test_neg.txt 失败: I/O operation on closed file.
+2025-05-19 20:26:52,611 - ERROR - 4mC_E.coli2 无有效序列，跳过处理
+2025-05-19 20:26:52,611 - INFO - 4mC_D.melanogaster neg 总序列数: 0
+2025-05-19 20:26:52,611 - ERROR - 4mC_D.melanogaster 无有效序列，跳过处理
+2025-05-19 20:26:52,611 - INFO - 4mC_C.equisetifolia test_pos.txt: 读取纯文本获得183条序列
+2025-05-19 20:26:52,611 - INFO - 开始处理物种: 4mC_G.subterraneus2
+2025-05-19 20:26:52,611 - INFO - 4mC_C.equisetifolia pos 总序列数: 366
+2025-05-19 20:26:52,611 - INFO - 开始处理物种: 4mC_R.chinensis
+2025-05-19 20:26:52,611 - INFO - 4mC_G.subterraneus2 分类为: Microorganism
+2025-05-19 20:26:52,611 - INFO - 4mC_R.chinensis 分类为: Plant
+2025-05-19 20:26:52,611 - INFO - 开始处理物种: 4mC_A.thaliana
+2025-05-19 20:26:52,611 - INFO - 4mC_C.elegans 分类为: Animal
+2025-05-19 20:26:52,611 - ERROR - 读取 /home/zqzhangshuyu/Projs/EnDeep4mC-V2/data/4mC/4mC_G.subterraneus2/train_pos.txt 失败: I/O operation on closed file.
+2025-05-19 20:26:52,611 - ERROR - 读取 /home/zqzhangshuyu/Projs/EnDeep4mC-V2/data/4mC/4mC_R.chinensis/train_pos.txt 失败: I/O operation on closed file.
+2025-05-19 20:26:52,611 - ERROR - 读取 /home/zqzhangshuyu/Projs/EnDeep4mC-V2/data/4mC/4mC_G.subterraneus2/test_pos.txt 失败: I/O operation on closed file.
+2025-05-19 20:26:52,611 - INFO - 4mC_G.subterraneus2 pos 总序列数: 0
+2025-05-19 20:26:52,611 - ERROR - 读取 /home/zqzhangshuyu/Projs/EnDeep4mC-V2/data/4mC/4mC_R.chinensis/test_pos.txt 失败: I/O operation on closed file.
+2025-05-19 20:26:52,611 - INFO - 4mC_C.equisetifolia train_neg.txt: 读取纯文本获得183条序列
+2025-05-19 20:26:52,611 - INFO - 4mC_R.chinensis pos 总序列数: 0
+2025-05-19 20:26:52,611 - ERROR - 读取 /home/zqzhangshuyu/Projs/EnDeep4mC-V2/data/4mC/4mC_G.subterraneus2/train_neg.txt 失败: I/O operation on closed file.
+2025-05-19 20:26:52,611 - ERROR - 读取 /home/zqzhangshuyu/Projs/EnDeep4mC-V2/data/4mC/4mC_G.subterraneus2/test_neg.txt 失败: I/O operation on closed file.
+2025-05-19 20:26:52,611 - ERROR - 读取 /home/zqzhangshuyu/Projs/EnDeep4mC-V2/data/4mC/4mC_R.chinensis/train_neg.txt 失败: I/O operation on closed file.
+2025-05-19 20:26:52,611 - INFO - 4mC_G.subterraneus2 neg 总序列数: 0
+2025-05-19 20:26:52,611 - INFO - 4mC_A.thaliana 分类为: Plant
+2025-05-19 20:26:52,611 - ERROR - 4mC_G.subterraneus2 无有效序列，跳过处理
+2025-05-19 20:26:52,611 - ERROR - 读取 /home/zqzhangshuyu/Projs/EnDeep4mC-V2/data/4mC/4mC_R.chinensis/test_neg.txt 失败: I/O operation on closed file.
+2025-05-19 20:26:52,611 - INFO - 4mC_C.equisetifolia test_neg.txt: 读取纯文本获得183条序列
+2025-05-19 20:26:52,611 - INFO - 4mC_R.chinensis neg 总序列数: 0
+2025-05-19 20:26:52,611 - INFO - 开始处理物种: 4mC_G.pickeringii2
+2025-05-19 20:26:52,611 - INFO - 4mC_C.equisetifolia neg 总序列数: 366
+2025-05-19 20:26:52,611 - ERROR - 4mC_R.chinensis 无有效序列，跳过处理
+2025-05-19 20:26:52,611 - INFO - 4mC_G.pickeringii2 分类为: Microorganism
+2025-05-19 20:26:52,611 - ERROR - 读取 /home/zqzhangshuyu/Projs/EnDeep4mC-V2/data/4mC/4mC_G.pickeringii2/train_pos.txt 失败: I/O operation on closed file.
+2025-05-19 20:26:52,611 - INFO - 开始处理物种: 4mC_S.cerevisiae
+2025-05-19 20:26:52,611 - ERROR - 读取 /home/zqzhangshuyu/Projs/EnDeep4mC-V2/data/4mC/4mC_G.pickeringii2/test_pos.txt 失败: I/O operation on closed file.
+2025-05-19 20:26:52,611 - INFO - 4mC_S.cerevisiae 分类为: Microorganism
+2025-05-19 20:26:52,611 - INFO - 4mC_G.pickeringii2 pos 总序列数: 0
+2025-05-19 20:26:52,612 - ERROR - 读取 /home/zqzhangshuyu/Projs/EnDeep4mC-V2/data/4mC/4mC_G.pickeringii2/train_neg.txt 失败: I/O operation on closed file.
+2025-05-19 20:26:52,612 - ERROR - 读取 /home/zqzhangshuyu/Projs/EnDeep4mC-V2/data/4mC/4mC_C.elegans/train_pos.txt 失败: I/O operation on closed file.
+2025-05-19 20:26:52,612 - ERROR - 读取 /home/zqzhangshuyu/Projs/EnDeep4mC-V2/data/4mC/4mC_G.pickeringii2/test_neg.txt 失败: I/O operation on closed file.
+2025-05-19 20:26:52,612 - INFO - 4mC_G.pickeringii2 neg 总序列数: 0
+2025-05-19 20:26:52,612 - ERROR - 4mC_G.pickeringii2 无有效序列，跳过处理
+2025-05-19 20:26:52,612 - INFO - 开始处理物种: 4mC_mouse
+2025-05-19 20:26:52,612 - ERROR - 读取 /home/zqzhangshuyu/Projs/EnDeep4mC-V2/data/4mC/4mC_A.thaliana/train_pos.txt 失败: I/O operation on closed file.
+2025-05-19 20:26:52,612 - ERROR - 读取 /home/zqzhangshuyu/Projs/EnDeep4mC-V2/data/4mC/4mC_C.elegans/test_pos.txt 失败: I/O operation on closed file.
+2025-05-19 20:26:52,612 - INFO - 4mC_mouse 分类为: Unknown
+2025-05-19 20:26:52,612 - INFO - 4mC_C.elegans pos 总序列数: 0
+2025-05-19 20:26:52,612 - ERROR - 读取 /home/zqzhangshuyu/Projs/EnDeep4mC-V2/data/4mC/4mC_A.thaliana/test_pos.txt 失败: I/O operation on closed file.
+2025-05-19 20:26:52,612 - ERROR - 读取 /home/zqzhangshuyu/Projs/EnDeep4mC-V2/data/4mC/4mC_mouse/train_pos.txt 失败: I/O operation on closed file.
+2025-05-19 20:26:52,612 - INFO - 4mC_A.thaliana pos 总序列数: 0
+2025-05-19 20:26:52,612 - ERROR - 读取 /home/zqzhangshuyu/Projs/EnDeep4mC-V2/data/4mC/4mC_C.elegans/train_neg.txt 失败: I/O operation on closed file.
+2025-05-19 20:26:52,612 - ERROR - 读取 /home/zqzhangshuyu/Projs/EnDeep4mC-V2/data/4mC/4mC_mouse/test_pos.txt 失败: I/O operation on closed file.
+2025-05-19 20:26:52,612 - INFO - 4mC_mouse pos 总序列数: 0
+2025-05-19 20:26:52,612 - ERROR - 读取 /home/zqzhangshuyu/Projs/EnDeep4mC-V2/data/4mC/4mC_C.elegans/test_neg.txt 失败: I/O operation on closed file.
+2025-05-19 20:26:52,612 - ERROR - 读取 /home/zqzhangshuyu/Projs/EnDeep4mC-V2/data/4mC/4mC_A.thaliana/train_neg.txt 失败: I/O operation on closed file.
+2025-05-19 20:26:52,612 - INFO - 4mC_C.elegans neg 总序列数: 0
+2025-05-19 20:26:52,612 - ERROR - 读取 /home/zqzhangshuyu/Projs/EnDeep4mC-V2/data/4mC/4mC_mouse/train_neg.txt 失败: I/O operation on closed file.
+2025-05-19 20:26:52,612 - ERROR - 4mC_C.elegans 无有效序列，跳过处理
+2025-05-19 20:26:52,612 - ERROR - 读取 /home/zqzhangshuyu/Projs/EnDeep4mC-V2/data/4mC/4mC_A.thaliana/test_neg.txt 失败: I/O operation on closed file.
+2025-05-19 20:26:52,612 - ERROR - 读取 /home/zqzhangshuyu/Projs/EnDeep4mC-V2/data/4mC/4mC_mouse/test_neg.txt 失败: I/O operation on closed file.
+2025-05-19 20:26:52,612 - INFO - 4mC_A.thaliana neg 总序列数: 0
+2025-05-19 20:26:52,612 - INFO - 4mC_mouse neg 总序列数: 0
+2025-05-19 20:26:52,612 - ERROR - 4mC_A.thaliana 无有效序列，跳过处理
+2025-05-19 20:26:52,612 - ERROR - 4mC_mouse 无有效序列，跳过处理
+2025-05-19 20:26:52,612 - INFO - 4mC_E.coli train_pos.txt: 读取纯文本获得1908条序列
+2025-05-19 20:26:52,612 - INFO - 4mC_E.coli test_pos.txt: 读取纯文本获得160条序列
+2025-05-19 20:26:52,612 - INFO - 4mC_E.coli pos 总序列数: 2068
+2025-05-19 20:26:52,612 - INFO - 4mC_S.cerevisiae train_pos.txt: 读取纯文本获得990条序列
+2025-05-19 20:26:52,613 - INFO - 4mC_S.cerevisiae test_pos.txt: 读取纯文本获得989条序列
+2025-05-19 20:26:52,613 - INFO - 4mC_S.cerevisiae pos 总序列数: 1979
+2025-05-19 20:26:52,613 - INFO - 4mC_E.coli train_neg.txt: 读取纯文本获得1908条序列
+2025-05-19 20:26:52,614 - INFO - 4mC_E.coli test_neg.txt: 读取纯文本获得160条序列
+2025-05-19 20:26:52,614 - INFO - 4mC_E.coli neg 总序列数: 2068
+2025-05-19 20:26:52,614 - INFO - 4mC_S.cerevisiae train_neg.txt: 读取纯文本获得990条序列
+2025-05-19 20:26:52,614 - INFO - 4mC_C.equisetifolia k=3: 正样本64种kmer，负样本64种kmer
+2025-05-19 20:26:52,615 - INFO - 4mC_S.cerevisiae test_neg.txt: 读取纯文本获得989条序列
+2025-05-19 20:26:52,615 - INFO - 4mC_S.cerevisiae neg 总序列数: 1979
+2025-05-19 20:26:52,615 - INFO - 4mC_F.vesca train_pos.txt: 读取纯文本获得7899条序列
+2025-05-19 20:26:52,616 - INFO - 4mC_Tolypocladium train_pos.txt: 读取纯文本获得7664条序列
+2025-05-19 20:26:52,617 - INFO - 4mC_C.equisetifolia k=4: 正样本256种kmer，负样本256种kmer
+2025-05-19 20:26:52,620 - INFO - 4mC_C.equisetifolia k=5: 正样本1023种kmer，负样本1018种kmer
+2025-05-19 20:26:52,621 - INFO - 4mC_F.vesca test_pos.txt: 读取纯文本获得7898条序列
+2025-05-19 20:26:52,621 - INFO - 4mC_F.vesca pos 总序列数: 15797
+2025-05-19 20:26:52,622 - INFO - 4mC_Tolypocladium test_pos.txt: 读取纯文本获得7663条序列
+2025-05-19 20:26:52,622 - INFO - 4mC_Tolypocladium pos 总序列数: 15327
+2025-05-19 20:26:52,627 - INFO - 4mC_F.vesca train_neg.txt: 读取纯文本获得7899条序列
+2025-05-19 20:26:52,628 - INFO - 4mC_Tolypocladium train_neg.txt: 读取纯文本获得7664条序列
+2025-05-19 20:26:52,630 - INFO - 4mC_E.coli k=3: 正样本64种kmer，负样本64种kmer
+2025-05-19 20:26:52,631 - INFO - 4mC_S.cerevisiae k=3: 正样本64种kmer，负样本64种kmer
+2025-05-19 20:26:52,632 - INFO - 4mC_F.vesca test_neg.txt: 读取纯文本获得7898条序列
+2025-05-19 20:26:52,632 - INFO - 4mC_F.vesca neg 总序列数: 15797
+2025-05-19 20:26:52,633 - INFO - 4mC_Tolypocladium test_neg.txt: 读取纯文本获得7663条序列
+2025-05-19 20:26:52,633 - INFO - 4mC_Tolypocladium neg 总序列数: 15327
+2025-05-19 20:26:52,646 - INFO - 4mC_S.cerevisiae k=4: 正样本256种kmer，负样本256种kmer
+2025-05-19 20:26:52,646 - INFO - 4mC_E.coli k=4: 正样本256种kmer，负样本256种kmer
+2025-05-19 20:26:52,660 - INFO - 4mC_S.cerevisiae k=5: 正样本1024种kmer，负样本1024种kmer
+2025-05-19 20:26:52,660 - INFO - 4mC_E.coli k=5: 正样本1023种kmer，负样本1024种kmer
+2025-05-19 20:26:52,749 - INFO - 4mC_Tolypocladium k=3: 正样本64种kmer，负样本64种kmer
+2025-05-19 20:26:52,808 - INFO - 4mC_F.vesca k=3: 正样本64种kmer，负样本64种kmer
+2025-05-19 20:26:52,864 - INFO - 4mC_Tolypocladium k=4: 正样本256种kmer，负样本256种kmer
+2025-05-19 20:26:52,975 - INFO - 4mC_Tolypocladium k=5: 正样本1024种kmer，负样本1024种kmer
+2025-05-19 20:26:53,015 - INFO - 4mC_F.vesca k=4: 正样本256种kmer，负样本256种kmer
+2025-05-19 20:26:53,132 - INFO - 4mC_F.vesca k=5: 正样本1024种kmer，负样本1024种kmer
+2025-05-19 20:26:55,831 - WARNING - 发现无效p值0.0，自动修正为1e-10
+2025-05-19 20:26:56,327 - INFO - 分析完成！结果保存在: /home/zqzhangshuyu/Projs/EnDeep4mC-V2/evaluations/kmer_analysis
+2025-05-20 22:45:08,186 - INFO - 未启用白名单，处理所有物种
+2025-05-20 22:45:08,186 - INFO - 将处理以下物种(18个):
+- 4mC_A.thaliana2
+- 4mC_C.elegans2
+- 4mC_D.melanogaster2
+- 4mC_G.pickeringii
+- 4mC_G.subterraneus
+- 4mC_Tolypocladium
+- 4mC_C.elegans
+- 4mC_A.thaliana
+- 4mC_F.vesca
+- 4mC_E.coli2
+- 4mC_E.coli
+- 4mC_C.equisetifolia
+- 4mC_D.melanogaster
+- 4mC_R.chinensis
+- 4mC_G.subterraneus2
+- 4mC_G.pickeringii2
+- 4mC_S.cerevisiae
+- 4mC_mouse
+2025-05-20 22:45:08,206 - INFO - 开始处理物种: 4mC_A.thaliana2
+2025-05-20 22:45:08,207 - INFO - 4mC_A.thaliana2 分类为: Plant
+2025-05-20 22:45:08,207 - INFO - 开始处理物种: 4mC_C.elegans2
+2025-05-20 22:45:08,207 - INFO - 开始处理物种: 4mC_A.thaliana
+2025-05-20 22:45:08,207 - INFO - 开始处理物种: 4mC_C.elegans
+2025-05-20 22:45:08,207 - INFO - 开始处理物种: 4mC_Tolypocladium
+2025-05-20 22:45:08,207 - INFO - 4mC_A.thaliana 分类为: Plant
+2025-05-20 22:45:08,207 - ERROR - 读取 /home/zqzhangshuyu/Projs/EnDeep4mC-V2/data/4mC/4mC_A.thaliana2/train_pos.txt 失败: I/O operation on closed file.
+2025-05-20 22:45:08,207 - INFO - 4mC_C.elegans 分类为: Animal
+2025-05-20 22:45:08,207 - INFO - 4mC_C.elegans2 分类为: Animal
+2025-05-20 22:45:08,207 - INFO - 开始处理物种: 4mC_G.subterraneus
+2025-05-20 22:45:08,207 - INFO - 4mC_Tolypocladium 分类为: Microorganism
+2025-05-20 22:45:08,207 - ERROR - 读取 /home/zqzhangshuyu/Projs/EnDeep4mC-V2/data/4mC/4mC_A.thaliana2/test_pos.txt 失败: I/O operation on closed file.
+2025-05-20 22:45:08,207 - INFO - 4mC_A.thaliana2 pos 总序列数: 0
+2025-05-20 22:45:08,207 - ERROR - 读取 /home/zqzhangshuyu/Projs/EnDeep4mC-V2/data/4mC/4mC_A.thaliana/train_pos.txt 失败: I/O operation on closed file.
+2025-05-20 22:45:08,207 - INFO - 开始处理物种: 4mC_G.pickeringii
+2025-05-20 22:45:08,207 - ERROR - 读取 /home/zqzhangshuyu/Projs/EnDeep4mC-V2/data/4mC/4mC_A.thaliana2/train_neg.txt 失败: I/O operation on closed file.
+2025-05-20 22:45:08,207 - INFO - 4mC_G.subterraneus 分类为: Microorganism
+2025-05-20 22:45:08,207 - ERROR - 读取 /home/zqzhangshuyu/Projs/EnDeep4mC-V2/data/4mC/4mC_C.elegans/train_pos.txt 失败: I/O operation on closed file.
+2025-05-20 22:45:08,207 - ERROR - 读取 /home/zqzhangshuyu/Projs/EnDeep4mC-V2/data/4mC/4mC_A.thaliana/test_pos.txt 失败: I/O operation on closed file.
+2025-05-20 22:45:08,207 - INFO - 开始处理物种: 4mC_D.melanogaster2
+2025-05-20 22:45:08,207 - INFO - 4mC_A.thaliana pos 总序列数: 0
+2025-05-20 22:45:08,207 - ERROR - 读取 /home/zqzhangshuyu/Projs/EnDeep4mC-V2/data/4mC/4mC_A.thaliana2/test_neg.txt 失败: I/O operation on closed file.
+2025-05-20 22:45:08,207 - ERROR - 读取 /home/zqzhangshuyu/Projs/EnDeep4mC-V2/data/4mC/4mC_C.elegans/test_pos.txt 失败: I/O operation on closed file.
+2025-05-20 22:45:08,207 - INFO - 4mC_A.thaliana2 neg 总序列数: 0
+2025-05-20 22:45:08,207 - ERROR - 读取 /home/zqzhangshuyu/Projs/EnDeep4mC-V2/data/4mC/4mC_C.elegans2/train_pos.txt 失败: I/O operation on closed file.
+2025-05-20 22:45:08,207 - ERROR - 读取 /home/zqzhangshuyu/Projs/EnDeep4mC-V2/data/4mC/4mC_A.thaliana/train_neg.txt 失败: I/O operation on closed file.
+2025-05-20 22:45:08,207 - ERROR - 4mC_A.thaliana2 无有效序列，跳过处理
+2025-05-20 22:45:08,207 - INFO - 4mC_C.elegans pos 总序列数: 0
+2025-05-20 22:45:08,207 - ERROR - 读取 /home/zqzhangshuyu/Projs/EnDeep4mC-V2/data/4mC/4mC_A.thaliana/test_neg.txt 失败: I/O operation on closed file.
+2025-05-20 22:45:08,207 - INFO - 4mC_G.pickeringii 分类为: Microorganism
+2025-05-20 22:45:08,207 - INFO - 4mC_A.thaliana neg 总序列数: 0
+2025-05-20 22:45:08,207 - ERROR - 读取 /home/zqzhangshuyu/Projs/EnDeep4mC-V2/data/4mC/4mC_C.elegans/train_neg.txt 失败: I/O operation on closed file.
+2025-05-20 22:45:08,207 - ERROR - 4mC_A.thaliana 无有效序列，跳过处理
+2025-05-20 22:45:08,207 - ERROR - 读取 /home/zqzhangshuyu/Projs/EnDeep4mC-V2/data/4mC/4mC_C.elegans2/test_pos.txt 失败: I/O operation on closed file.
+2025-05-20 22:45:08,207 - INFO - 4mC_D.melanogaster2 分类为: Animal
+2025-05-20 22:45:08,207 - ERROR - 读取 /home/zqzhangshuyu/Projs/EnDeep4mC-V2/data/4mC/4mC_C.elegans/test_neg.txt 失败: I/O operation on closed file.
+2025-05-20 22:45:08,207 - INFO - 4mC_C.elegans2 pos 总序列数: 0
+2025-05-20 22:45:08,207 - INFO - 4mC_C.elegans neg 总序列数: 0
+2025-05-20 22:45:08,207 - ERROR - 读取 /home/zqzhangshuyu/Projs/EnDeep4mC-V2/data/4mC/4mC_G.subterraneus/train_pos.txt 失败: I/O operation on closed file.
+2025-05-20 22:45:08,207 - ERROR - 4mC_C.elegans 无有效序列，跳过处理
+2025-05-20 22:45:08,207 - INFO - 开始处理物种: 4mC_F.vesca
+2025-05-20 22:45:08,207 - ERROR - 读取 /home/zqzhangshuyu/Projs/EnDeep4mC-V2/data/4mC/4mC_C.elegans2/train_neg.txt 失败: I/O operation on closed file.
+2025-05-20 22:45:08,207 - INFO - 4mC_F.vesca 分类为: Plant
+2025-05-20 22:45:08,208 - INFO - 开始处理物种: 4mC_E.coli2
+2025-05-20 22:45:08,208 - INFO - 4mC_E.coli2 分类为: Microorganism
+2025-05-20 22:45:08,208 - ERROR - 读取 /home/zqzhangshuyu/Projs/EnDeep4mC-V2/data/4mC/4mC_G.subterraneus/test_pos.txt 失败: I/O operation on closed file.
+2025-05-20 22:45:08,208 - ERROR - 读取 /home/zqzhangshuyu/Projs/EnDeep4mC-V2/data/4mC/4mC_C.elegans2/test_neg.txt 失败: I/O operation on closed file.
+2025-05-20 22:45:08,208 - ERROR - 读取 /home/zqzhangshuyu/Projs/EnDeep4mC-V2/data/4mC/4mC_E.coli2/train_pos.txt 失败: I/O operation on closed file.
+2025-05-20 22:45:08,208 - INFO - 4mC_G.subterraneus pos 总序列数: 0
+2025-05-20 22:45:08,208 - INFO - 4mC_C.elegans2 neg 总序列数: 0
+2025-05-20 22:45:08,208 - ERROR - 读取 /home/zqzhangshuyu/Projs/EnDeep4mC-V2/data/4mC/4mC_E.coli2/test_pos.txt 失败: I/O operation on closed file.
+2025-05-20 22:45:08,208 - INFO - 开始处理物种: 4mC_E.coli
+2025-05-20 22:45:08,208 - INFO - 4mC_E.coli2 pos 总序列数: 0
+2025-05-20 22:45:08,208 - ERROR - 4mC_C.elegans2 无有效序列，跳过处理
+2025-05-20 22:45:08,208 - ERROR - 读取 /home/zqzhangshuyu/Projs/EnDeep4mC-V2/data/4mC/4mC_G.pickeringii/train_pos.txt 失败: I/O operation on closed file.
+2025-05-20 22:45:08,208 - INFO - 4mC_E.coli 分类为: Microorganism
+2025-05-20 22:45:08,208 - ERROR - 读取 /home/zqzhangshuyu/Projs/EnDeep4mC-V2/data/4mC/4mC_E.coli2/train_neg.txt 失败: I/O operation on closed file.
+2025-05-20 22:45:08,208 - ERROR - 读取 /home/zqzhangshuyu/Projs/EnDeep4mC-V2/data/4mC/4mC_G.subterraneus/train_neg.txt 失败: I/O operation on closed file.
+2025-05-20 22:45:08,208 - ERROR - 读取 /home/zqzhangshuyu/Projs/EnDeep4mC-V2/data/4mC/4mC_E.coli2/test_neg.txt 失败: I/O operation on closed file.
+2025-05-20 22:45:08,208 - INFO - 4mC_E.coli2 neg 总序列数: 0
+2025-05-20 22:45:08,208 - ERROR - 读取 /home/zqzhangshuyu/Projs/EnDeep4mC-V2/data/4mC/4mC_D.melanogaster2/train_pos.txt 失败: I/O operation on closed file.
+2025-05-20 22:45:08,208 - ERROR - 4mC_E.coli2 无有效序列，跳过处理
+2025-05-20 22:45:08,208 - ERROR - 读取 /home/zqzhangshuyu/Projs/EnDeep4mC-V2/data/4mC/4mC_G.subterraneus/test_neg.txt 失败: I/O operation on closed file.
+2025-05-20 22:45:08,208 - ERROR - 读取 /home/zqzhangshuyu/Projs/EnDeep4mC-V2/data/4mC/4mC_G.pickeringii/test_pos.txt 失败: I/O operation on closed file.
+2025-05-20 22:45:08,208 - INFO - 开始处理物种: 4mC_C.equisetifolia
+2025-05-20 22:45:08,208 - INFO - 4mC_G.subterraneus neg 总序列数: 0
+2025-05-20 22:45:08,208 - INFO - 4mC_C.equisetifolia 分类为: Plant
+2025-05-20 22:45:08,208 - ERROR - 4mC_G.subterraneus 无有效序列，跳过处理
+2025-05-20 22:45:08,208 - INFO - 4mC_G.pickeringii pos 总序列数: 0
+2025-05-20 22:45:08,208 - ERROR - 读取 /home/zqzhangshuyu/Projs/EnDeep4mC-V2/data/4mC/4mC_D.melanogaster2/test_pos.txt 失败: I/O operation on closed file.
+2025-05-20 22:45:08,208 - INFO - 开始处理物种: 4mC_D.melanogaster
+2025-05-20 22:45:08,208 - INFO - 4mC_D.melanogaster 分类为: Animal
+2025-05-20 22:45:08,208 - INFO - 4mC_D.melanogaster2 pos 总序列数: 0
+2025-05-20 22:45:08,208 - INFO - 4mC_C.equisetifolia train_pos.txt: 读取纯文本获得183条序列
+2025-05-20 22:45:08,208 - ERROR - 读取 /home/zqzhangshuyu/Projs/EnDeep4mC-V2/data/4mC/4mC_G.pickeringii/train_neg.txt 失败: I/O operation on closed file.
+2025-05-20 22:45:08,208 - ERROR - 读取 /home/zqzhangshuyu/Projs/EnDeep4mC-V2/data/4mC/4mC_D.melanogaster/train_pos.txt 失败: I/O operation on closed file.
+2025-05-20 22:45:08,208 - ERROR - 读取 /home/zqzhangshuyu/Projs/EnDeep4mC-V2/data/4mC/4mC_G.pickeringii/test_neg.txt 失败: I/O operation on closed file.
+2025-05-20 22:45:08,208 - ERROR - 读取 /home/zqzhangshuyu/Projs/EnDeep4mC-V2/data/4mC/4mC_D.melanogaster2/train_neg.txt 失败: I/O operation on closed file.
+2025-05-20 22:45:08,208 - ERROR - 读取 /home/zqzhangshuyu/Projs/EnDeep4mC-V2/data/4mC/4mC_D.melanogaster/test_pos.txt 失败: I/O operation on closed file.
+2025-05-20 22:45:08,208 - INFO - 4mC_C.equisetifolia test_pos.txt: 读取纯文本获得183条序列
+2025-05-20 22:45:08,208 - INFO - 4mC_C.equisetifolia pos 总序列数: 366
+2025-05-20 22:45:08,208 - INFO - 开始处理物种: 4mC_R.chinensis
+2025-05-20 22:45:08,208 - INFO - 4mC_D.melanogaster pos 总序列数: 0
+2025-05-20 22:45:08,208 - INFO - 4mC_G.pickeringii neg 总序列数: 0
+2025-05-20 22:45:08,208 - INFO - 4mC_R.chinensis 分类为: Plant
+2025-05-20 22:45:08,208 - ERROR - 4mC_G.pickeringii 无有效序列，跳过处理
+2025-05-20 22:45:08,208 - ERROR - 读取 /home/zqzhangshuyu/Projs/EnDeep4mC-V2/data/4mC/4mC_D.melanogaster2/test_neg.txt 失败: I/O operation on closed file.
+2025-05-20 22:45:08,208 - ERROR - 读取 /home/zqzhangshuyu/Projs/EnDeep4mC-V2/data/4mC/4mC_D.melanogaster/train_neg.txt 失败: I/O operation on closed file.
+2025-05-20 22:45:08,208 - INFO - 4mC_D.melanogaster2 neg 总序列数: 0
+2025-05-20 22:45:08,208 - ERROR - 读取 /home/zqzhangshuyu/Projs/EnDeep4mC-V2/data/4mC/4mC_R.chinensis/train_pos.txt 失败: I/O operation on closed file.
+2025-05-20 22:45:08,209 - ERROR - 4mC_D.melanogaster2 无有效序列，跳过处理
+2025-05-20 22:45:08,209 - ERROR - 读取 /home/zqzhangshuyu/Projs/EnDeep4mC-V2/data/4mC/4mC_D.melanogaster/test_neg.txt 失败: I/O operation on closed file.
+2025-05-20 22:45:08,209 - INFO - 4mC_C.equisetifolia train_neg.txt: 读取纯文本获得183条序列
+2025-05-20 22:45:08,209 - INFO - 4mC_D.melanogaster neg 总序列数: 0
+2025-05-20 22:45:08,209 - ERROR - 读取 /home/zqzhangshuyu/Projs/EnDeep4mC-V2/data/4mC/4mC_R.chinensis/test_pos.txt 失败: I/O operation on closed file.
+2025-05-20 22:45:08,209 - ERROR - 4mC_D.melanogaster 无有效序列，跳过处理
+2025-05-20 22:45:08,209 - INFO - 4mC_R.chinensis pos 总序列数: 0
+2025-05-20 22:45:08,209 - INFO - 开始处理物种: 4mC_G.subterraneus2
+2025-05-20 22:45:08,209 - ERROR - 读取 /home/zqzhangshuyu/Projs/EnDeep4mC-V2/data/4mC/4mC_R.chinensis/train_neg.txt 失败: I/O operation on closed file.
+2025-05-20 22:45:08,209 - INFO - 4mC_G.subterraneus2 分类为: Microorganism
+2025-05-20 22:45:08,209 - INFO - 开始处理物种: 4mC_G.pickeringii2
+2025-05-20 22:45:08,209 - ERROR - 读取 /home/zqzhangshuyu/Projs/EnDeep4mC-V2/data/4mC/4mC_R.chinensis/test_neg.txt 失败: I/O operation on closed file.
+2025-05-20 22:45:08,209 - INFO - 4mC_G.pickeringii2 分类为: Microorganism
+2025-05-20 22:45:08,209 - ERROR - 读取 /home/zqzhangshuyu/Projs/EnDeep4mC-V2/data/4mC/4mC_G.subterraneus2/train_pos.txt 失败: I/O operation on closed file.
+2025-05-20 22:45:08,209 - INFO - 4mC_C.equisetifolia test_neg.txt: 读取纯文本获得183条序列
+2025-05-20 22:45:08,209 - INFO - 4mC_R.chinensis neg 总序列数: 0
+2025-05-20 22:45:08,209 - INFO - 开始处理物种: 4mC_S.cerevisiae
+2025-05-20 22:45:08,209 - ERROR - 4mC_R.chinensis 无有效序列，跳过处理
+2025-05-20 22:45:08,209 - INFO - 4mC_C.equisetifolia neg 总序列数: 366
+2025-05-20 22:45:08,209 - ERROR - 读取 /home/zqzhangshuyu/Projs/EnDeep4mC-V2/data/4mC/4mC_G.subterraneus2/test_pos.txt 失败: I/O operation on closed file.
+2025-05-20 22:45:08,209 - ERROR - 读取 /home/zqzhangshuyu/Projs/EnDeep4mC-V2/data/4mC/4mC_G.pickeringii2/train_pos.txt 失败: I/O operation on closed file.
+2025-05-20 22:45:08,209 - INFO - 4mC_S.cerevisiae 分类为: Microorganism
+2025-05-20 22:45:08,209 - INFO - 4mC_G.subterraneus2 pos 总序列数: 0
+2025-05-20 22:45:08,209 - ERROR - 读取 /home/zqzhangshuyu/Projs/EnDeep4mC-V2/data/4mC/4mC_G.subterraneus2/train_neg.txt 失败: I/O operation on closed file.
+2025-05-20 22:45:08,209 - INFO - 开始处理物种: 4mC_mouse
+2025-05-20 22:45:08,209 - ERROR - 读取 /home/zqzhangshuyu/Projs/EnDeep4mC-V2/data/4mC/4mC_G.pickeringii2/test_pos.txt 失败: I/O operation on closed file.
+2025-05-20 22:45:08,209 - INFO - 4mC_mouse 分类为: Unknown
+2025-05-20 22:45:08,209 - INFO - 4mC_G.pickeringii2 pos 总序列数: 0
+2025-05-20 22:45:08,209 - ERROR - 读取 /home/zqzhangshuyu/Projs/EnDeep4mC-V2/data/4mC/4mC_G.subterraneus2/test_neg.txt 失败: I/O operation on closed file.
+2025-05-20 22:45:08,209 - INFO - 4mC_G.subterraneus2 neg 总序列数: 0
+2025-05-20 22:45:08,209 - ERROR - 读取 /home/zqzhangshuyu/Projs/EnDeep4mC-V2/data/4mC/4mC_mouse/train_pos.txt 失败: I/O operation on closed file.
+2025-05-20 22:45:08,209 - ERROR - 4mC_G.subterraneus2 无有效序列，跳过处理
+2025-05-20 22:45:08,209 - ERROR - 读取 /home/zqzhangshuyu/Projs/EnDeep4mC-V2/data/4mC/4mC_G.pickeringii2/train_neg.txt 失败: I/O operation on closed file.
+2025-05-20 22:45:08,209 - ERROR - 读取 /home/zqzhangshuyu/Projs/EnDeep4mC-V2/data/4mC/4mC_mouse/test_pos.txt 失败: I/O operation on closed file.
+2025-05-20 22:45:08,209 - INFO - 4mC_mouse pos 总序列数: 0
+2025-05-20 22:45:08,209 - ERROR - 读取 /home/zqzhangshuyu/Projs/EnDeep4mC-V2/data/4mC/4mC_G.pickeringii2/test_neg.txt 失败: I/O operation on closed file.
+2025-05-20 22:45:08,209 - INFO - 4mC_G.pickeringii2 neg 总序列数: 0
+2025-05-20 22:45:08,209 - ERROR - 读取 /home/zqzhangshuyu/Projs/EnDeep4mC-V2/data/4mC/4mC_mouse/train_neg.txt 失败: I/O operation on closed file.
+2025-05-20 22:45:08,209 - ERROR - 4mC_G.pickeringii2 无有效序列，跳过处理
+2025-05-20 22:45:08,209 - ERROR - 读取 /home/zqzhangshuyu/Projs/EnDeep4mC-V2/data/4mC/4mC_mouse/test_neg.txt 失败: I/O operation on closed file.
+2025-05-20 22:45:08,209 - INFO - 4mC_mouse neg 总序列数: 0
+2025-05-20 22:45:08,209 - ERROR - 4mC_mouse 无有效序列，跳过处理
+2025-05-20 22:45:08,210 - INFO - 4mC_E.coli train_pos.txt: 读取纯文本获得1908条序列
+2025-05-20 22:45:08,210 - INFO - 4mC_E.coli test_pos.txt: 读取纯文本获得160条序列
+2025-05-20 22:45:08,210 - INFO - 4mC_E.coli pos 总序列数: 2068
+2025-05-20 22:45:08,210 - INFO - 4mC_S.cerevisiae train_pos.txt: 读取纯文本获得990条序列
+2025-05-20 22:45:08,211 - INFO - 4mC_S.cerevisiae test_pos.txt: 读取纯文本获得989条序列
+2025-05-20 22:45:08,211 - INFO - 4mC_S.cerevisiae pos 总序列数: 1979
+2025-05-20 22:45:08,211 - INFO - 4mC_E.coli train_neg.txt: 读取纯文本获得1908条序列
+2025-05-20 22:45:08,212 - INFO - 4mC_E.coli test_neg.txt: 读取纯文本获得160条序列
+2025-05-20 22:45:08,212 - INFO - 4mC_E.coli neg 总序列数: 2068
+2025-05-20 22:45:08,212 - INFO - 4mC_C.equisetifolia k=3: 正样本64种kmer，负样本64种kmer
+2025-05-20 22:45:08,213 - INFO - 4mC_S.cerevisiae train_neg.txt: 读取纯文本获得990条序列
+2025-05-20 22:45:08,214 - INFO - 4mC_Tolypocladium train_pos.txt: 读取纯文本获得7664条序列
+2025-05-20 22:45:08,214 - INFO - 4mC_S.cerevisiae test_neg.txt: 读取纯文本获得989条序列
+2025-05-20 22:45:08,214 - INFO - 4mC_S.cerevisiae neg 总序列数: 1979
+2025-05-20 22:45:08,214 - INFO - 4mC_F.vesca train_pos.txt: 读取纯文本获得7899条序列
+2025-05-20 22:45:08,215 - INFO - 4mC_C.equisetifolia k=4: 正样本256种kmer，负样本256种kmer
+2025-05-20 22:45:08,218 - INFO - 4mC_C.equisetifolia k=5: 正样本1023种kmer，负样本1018种kmer
+2025-05-20 22:45:08,219 - INFO - 4mC_Tolypocladium test_pos.txt: 读取纯文本获得7663条序列
+2025-05-20 22:45:08,219 - INFO - 4mC_Tolypocladium pos 总序列数: 15327
+2025-05-20 22:45:08,220 - INFO - 4mC_F.vesca test_pos.txt: 读取纯文本获得7898条序列
+2025-05-20 22:45:08,220 - INFO - 4mC_F.vesca pos 总序列数: 15797
+2025-05-20 22:45:08,224 - INFO - 4mC_Tolypocladium train_neg.txt: 读取纯文本获得7664条序列
+2025-05-20 22:45:08,226 - INFO - 4mC_F.vesca train_neg.txt: 读取纯文本获得7899条序列
+2025-05-20 22:45:08,228 - INFO - 4mC_E.coli k=3: 正样本64种kmer，负样本64种kmer
+2025-05-20 22:45:08,229 - INFO - 4mC_Tolypocladium test_neg.txt: 读取纯文本获得7663条序列
+2025-05-20 22:45:08,229 - INFO - 4mC_Tolypocladium neg 总序列数: 15327
+2025-05-20 22:45:08,231 - INFO - 4mC_F.vesca test_neg.txt: 读取纯文本获得7898条序列
+2025-05-20 22:45:08,231 - INFO - 4mC_F.vesca neg 总序列数: 15797
+2025-05-20 22:45:08,240 - INFO - 4mC_S.cerevisiae k=3: 正样本64种kmer，负样本64种kmer
+2025-05-20 22:45:08,243 - INFO - 4mC_E.coli k=4: 正样本256种kmer，负样本256种kmer
+2025-05-20 22:45:08,259 - INFO - 4mC_E.coli k=5: 正样本1023种kmer，负样本1024种kmer
+2025-05-20 22:45:08,264 - INFO - 4mC_S.cerevisiae k=4: 正样本256种kmer，负样本256种kmer
+2025-05-20 22:45:08,288 - INFO - 4mC_S.cerevisiae k=5: 正样本1024种kmer，负样本1024种kmer
+2025-05-20 22:45:08,350 - INFO - 4mC_Tolypocladium k=3: 正样本64种kmer，负样本64种kmer
+2025-05-20 22:45:08,356 - INFO - 4mC_F.vesca k=3: 正样本64种kmer，负样本64种kmer
+2025-05-20 22:45:08,462 - INFO - 4mC_Tolypocladium k=4: 正样本256种kmer，负样本256种kmer
+2025-05-20 22:45:08,469 - INFO - 4mC_F.vesca k=4: 正样本256种kmer，负样本256种kmer
+2025-05-20 22:45:08,571 - INFO - 4mC_Tolypocladium k=5: 正样本1024种kmer，负样本1024种kmer
+2025-05-20 22:45:08,582 - INFO - 4mC_F.vesca k=5: 正样本1024种kmer，负样本1024种kmer
+2025-05-20 22:45:11,324 - WARNING - 发现无效p值0.0，自动修正为1e-10
+2025-05-20 22:45:11,816 - INFO - 分析完成！结果保存在: /home/zqzhangshuyu/Projs/EnDeep4mC-V2/evaluations/kmer_analysis
+2025-05-20 22:51:33,537 - INFO - 未启用白名单，处理所有物种
+2025-05-20 22:51:33,537 - INFO - 将处理以下物种(18个):
+- 4mC_A.thaliana2
+- 4mC_C.elegans2
+- 4mC_D.melanogaster2
+- 4mC_G.pickeringii
+- 4mC_G.subterraneus
+- 4mC_Tolypocladium
+- 4mC_C.elegans
+- 4mC_A.thaliana
+- 4mC_F.vesca
+- 4mC_E.coli2
+- 4mC_E.coli
+- 4mC_C.equisetifolia
+- 4mC_D.melanogaster
+- 4mC_R.chinensis
+- 4mC_G.subterraneus2
+- 4mC_G.pickeringii2
+- 4mC_S.cerevisiae
+- 4mC_mouse
+2025-05-20 22:51:33,558 - INFO - 开始处理物种: 4mC_C.elegans
+2025-05-20 22:51:33,558 - INFO - 开始处理物种: 4mC_A.thaliana
+2025-05-20 22:51:33,558 - INFO - 开始处理物种: 4mC_Tolypocladium
+2025-05-20 22:51:33,557 - INFO - 开始处理物种: 4mC_C.elegans2
+2025-05-20 22:51:33,558 - INFO - 4mC_C.elegans 分类为: Animal
+2025-05-20 22:51:33,558 - INFO - 4mC_A.thaliana 分类为: Plant
+2025-05-20 22:51:33,558 - INFO - 4mC_Tolypocladium 分类为: Microorganism
+2025-05-20 22:51:33,558 - INFO - 开始处理物种: 4mC_A.thaliana2
+2025-05-20 22:51:33,558 - ERROR - 读取 /home/zqzhangshuyu/Projs/EnDeep4mC-V2/data/4mC/4mC_A.thaliana/train_pos.txt 失败: I/O operation on closed file.
+2025-05-20 22:51:33,558 - INFO - 4mC_C.elegans2 分类为: Animal
+2025-05-20 22:51:33,558 - INFO - 开始处理物种: 4mC_G.subterraneus
+2025-05-20 22:51:33,558 - ERROR - 读取 /home/zqzhangshuyu/Projs/EnDeep4mC-V2/data/4mC/4mC_C.elegans/train_pos.txt 失败: I/O operation on closed file.
+2025-05-20 22:51:33,558 - ERROR - 读取 /home/zqzhangshuyu/Projs/EnDeep4mC-V2/data/4mC/4mC_A.thaliana/test_pos.txt 失败: I/O operation on closed file.
+2025-05-20 22:51:33,558 - INFO - 4mC_A.thaliana pos 总序列数: 0
+2025-05-20 22:51:33,558 - INFO - 开始处理物种: 4mC_G.pickeringii
+2025-05-20 22:51:33,558 - INFO - 4mC_A.thaliana2 分类为: Plant
+2025-05-20 22:51:33,558 - ERROR - 读取 /home/zqzhangshuyu/Projs/EnDeep4mC-V2/data/4mC/4mC_C.elegans/test_pos.txt 失败: I/O operation on closed file.
+2025-05-20 22:51:33,558 - ERROR - 读取 /home/zqzhangshuyu/Projs/EnDeep4mC-V2/data/4mC/4mC_A.thaliana/train_neg.txt 失败: I/O operation on closed file.
+2025-05-20 22:51:33,558 - INFO - 4mC_C.elegans pos 总序列数: 0
+2025-05-20 22:51:33,558 - INFO - 开始处理物种: 4mC_D.melanogaster2
+2025-05-20 22:51:33,558 - ERROR - 读取 /home/zqzhangshuyu/Projs/EnDeep4mC-V2/data/4mC/4mC_A.thaliana/test_neg.txt 失败: I/O operation on closed file.
+2025-05-20 22:51:33,558 - INFO - 4mC_G.subterraneus 分类为: Microorganism
+2025-05-20 22:51:33,558 - INFO - 4mC_A.thaliana neg 总序列数: 0
+2025-05-20 22:51:33,558 - INFO - 4mC_G.pickeringii 分类为: Microorganism
+2025-05-20 22:51:33,558 - INFO - 4mC_D.melanogaster2 分类为: Animal
+2025-05-20 22:51:33,558 - ERROR - 读取 /home/zqzhangshuyu/Projs/EnDeep4mC-V2/data/4mC/4mC_C.elegans/train_neg.txt 失败: I/O operation on closed file.
+2025-05-20 22:51:33,558 - ERROR - 读取 /home/zqzhangshuyu/Projs/EnDeep4mC-V2/data/4mC/4mC_C.elegans2/train_pos.txt 失败: I/O operation on closed file.
+2025-05-20 22:51:33,558 - ERROR - 4mC_A.thaliana 无有效序列，跳过处理
+2025-05-20 22:51:33,558 - ERROR - 读取 /home/zqzhangshuyu/Projs/EnDeep4mC-V2/data/4mC/4mC_C.elegans/test_neg.txt 失败: I/O operation on closed file.
+2025-05-20 22:51:33,558 - ERROR - 读取 /home/zqzhangshuyu/Projs/EnDeep4mC-V2/data/4mC/4mC_C.elegans2/test_pos.txt 失败: I/O operation on closed file.
+2025-05-20 22:51:33,558 - ERROR - 读取 /home/zqzhangshuyu/Projs/EnDeep4mC-V2/data/4mC/4mC_A.thaliana2/train_pos.txt 失败: I/O operation on closed file.
+2025-05-20 22:51:33,558 - INFO - 4mC_C.elegans neg 总序列数: 0
+2025-05-20 22:51:33,558 - INFO - 4mC_C.elegans2 pos 总序列数: 0
+2025-05-20 22:51:33,558 - ERROR - 4mC_C.elegans 无有效序列，跳过处理
+2025-05-20 22:51:33,558 - ERROR - 读取 /home/zqzhangshuyu/Projs/EnDeep4mC-V2/data/4mC/4mC_D.melanogaster2/train_pos.txt 失败: I/O operation on closed file.
+2025-05-20 22:51:33,558 - ERROR - 读取 /home/zqzhangshuyu/Projs/EnDeep4mC-V2/data/4mC/4mC_G.pickeringii/train_pos.txt 失败: I/O operation on closed file.
+2025-05-20 22:51:33,558 - ERROR - 读取 /home/zqzhangshuyu/Projs/EnDeep4mC-V2/data/4mC/4mC_C.elegans2/train_neg.txt 失败: I/O operation on closed file.
+2025-05-20 22:51:33,558 - ERROR - 读取 /home/zqzhangshuyu/Projs/EnDeep4mC-V2/data/4mC/4mC_A.thaliana2/test_pos.txt 失败: I/O operation on closed file.
+2025-05-20 22:51:33,558 - INFO - 4mC_A.thaliana2 pos 总序列数: 0
+2025-05-20 22:51:33,558 - INFO - 开始处理物种: 4mC_F.vesca
+2025-05-20 22:51:33,558 - ERROR - 读取 /home/zqzhangshuyu/Projs/EnDeep4mC-V2/data/4mC/4mC_C.elegans2/test_neg.txt 失败: I/O operation on closed file.
+2025-05-20 22:51:33,559 - ERROR - 读取 /home/zqzhangshuyu/Projs/EnDeep4mC-V2/data/4mC/4mC_D.melanogaster2/test_pos.txt 失败: I/O operation on closed file.
+2025-05-20 22:51:33,559 - ERROR - 读取 /home/zqzhangshuyu/Projs/EnDeep4mC-V2/data/4mC/4mC_G.pickeringii/test_pos.txt 失败: I/O operation on closed file.
+2025-05-20 22:51:33,559 - INFO - 4mC_C.elegans2 neg 总序列数: 0
+2025-05-20 22:51:33,559 - INFO - 4mC_F.vesca 分类为: Plant
+2025-05-20 22:51:33,559 - INFO - 4mC_G.pickeringii pos 总序列数: 0
+2025-05-20 22:51:33,559 - INFO - 4mC_D.melanogaster2 pos 总序列数: 0
+2025-05-20 22:51:33,559 - ERROR - 4mC_C.elegans2 无有效序列，跳过处理
+2025-05-20 22:51:33,559 - ERROR - 读取 /home/zqzhangshuyu/Projs/EnDeep4mC-V2/data/4mC/4mC_A.thaliana2/train_neg.txt 失败: I/O operation on closed file.
+2025-05-20 22:51:33,559 - ERROR - 读取 /home/zqzhangshuyu/Projs/EnDeep4mC-V2/data/4mC/4mC_G.subterraneus/train_pos.txt 失败: I/O operation on closed file.
+2025-05-20 22:51:33,559 - ERROR - 读取 /home/zqzhangshuyu/Projs/EnDeep4mC-V2/data/4mC/4mC_G.pickeringii/train_neg.txt 失败: I/O operation on closed file.
+2025-05-20 22:51:33,559 - ERROR - 读取 /home/zqzhangshuyu/Projs/EnDeep4mC-V2/data/4mC/4mC_D.melanogaster2/train_neg.txt 失败: I/O operation on closed file.
+2025-05-20 22:51:33,559 - INFO - 开始处理物种: 4mC_E.coli2
+2025-05-20 22:51:33,559 - ERROR - 读取 /home/zqzhangshuyu/Projs/EnDeep4mC-V2/data/4mC/4mC_A.thaliana2/test_neg.txt 失败: I/O operation on closed file.
+2025-05-20 22:51:33,559 - INFO - 4mC_E.coli2 分类为: Microorganism
+2025-05-20 22:51:33,559 - ERROR - 读取 /home/zqzhangshuyu/Projs/EnDeep4mC-V2/data/4mC/4mC_G.pickeringii/test_neg.txt 失败: I/O operation on closed file.
+2025-05-20 22:51:33,559 - INFO - 4mC_A.thaliana2 neg 总序列数: 0
+2025-05-20 22:51:33,559 - ERROR - 读取 /home/zqzhangshuyu/Projs/EnDeep4mC-V2/data/4mC/4mC_D.melanogaster2/test_neg.txt 失败: I/O operation on closed file.
+2025-05-20 22:51:33,559 - INFO - 4mC_G.pickeringii neg 总序列数: 0
+2025-05-20 22:51:33,559 - ERROR - 4mC_A.thaliana2 无有效序列，跳过处理
+2025-05-20 22:51:33,559 - INFO - 4mC_D.melanogaster2 neg 总序列数: 0
+2025-05-20 22:51:33,559 - ERROR - 4mC_G.pickeringii 无有效序列，跳过处理
+2025-05-20 22:51:33,559 - ERROR - 读取 /home/zqzhangshuyu/Projs/EnDeep4mC-V2/data/4mC/4mC_E.coli2/train_pos.txt 失败: I/O operation on closed file.
+2025-05-20 22:51:33,559 - ERROR - 4mC_D.melanogaster2 无有效序列，跳过处理
+2025-05-20 22:51:33,559 - INFO - 开始处理物种: 4mC_E.coli
+2025-05-20 22:51:33,559 - ERROR - 读取 /home/zqzhangshuyu/Projs/EnDeep4mC-V2/data/4mC/4mC_E.coli2/test_pos.txt 失败: I/O operation on closed file.
+2025-05-20 22:51:33,559 - ERROR - 读取 /home/zqzhangshuyu/Projs/EnDeep4mC-V2/data/4mC/4mC_G.subterraneus/test_pos.txt 失败: I/O operation on closed file.
+2025-05-20 22:51:33,559 - INFO - 4mC_E.coli 分类为: Microorganism
+2025-05-20 22:51:33,559 - INFO - 4mC_E.coli2 pos 总序列数: 0
+2025-05-20 22:51:33,559 - ERROR - 读取 /home/zqzhangshuyu/Projs/EnDeep4mC-V2/data/4mC/4mC_E.coli2/train_neg.txt 失败: I/O operation on closed file.
+2025-05-20 22:51:33,559 - INFO - 4mC_G.subterraneus pos 总序列数: 0
+2025-05-20 22:51:33,559 - ERROR - 读取 /home/zqzhangshuyu/Projs/EnDeep4mC-V2/data/4mC/4mC_E.coli2/test_neg.txt 失败: I/O operation on closed file.
+2025-05-20 22:51:33,559 - INFO - 开始处理物种: 4mC_C.equisetifolia
+2025-05-20 22:51:33,559 - INFO - 4mC_E.coli2 neg 总序列数: 0
+2025-05-20 22:51:33,559 - INFO - 开始处理物种: 4mC_D.melanogaster
+2025-05-20 22:51:33,559 - ERROR - 4mC_E.coli2 无有效序列，跳过处理
+2025-05-20 22:51:33,559 - INFO - 4mC_C.equisetifolia 分类为: Plant
+2025-05-20 22:51:33,559 - INFO - 开始处理物种: 4mC_R.chinensis
+2025-05-20 22:51:33,559 - INFO - 4mC_D.melanogaster 分类为: Animal
+2025-05-20 22:51:33,559 - INFO - 4mC_R.chinensis 分类为: Plant
+2025-05-20 22:51:33,559 - ERROR - 读取 /home/zqzhangshuyu/Projs/EnDeep4mC-V2/data/4mC/4mC_G.subterraneus/train_neg.txt 失败: I/O operation on closed file.
+2025-05-20 22:51:33,559 - INFO - 开始处理物种: 4mC_G.subterraneus2
+2025-05-20 22:51:33,559 - ERROR - 读取 /home/zqzhangshuyu/Projs/EnDeep4mC-V2/data/4mC/4mC_D.melanogaster/train_pos.txt 失败: I/O operation on closed file.
+2025-05-20 22:51:33,559 - INFO - 4mC_G.subterraneus2 分类为: Microorganism
+2025-05-20 22:51:33,559 - ERROR - 读取 /home/zqzhangshuyu/Projs/EnDeep4mC-V2/data/4mC/4mC_R.chinensis/train_pos.txt 失败: I/O operation on closed file.
+2025-05-20 22:51:33,559 - ERROR - 读取 /home/zqzhangshuyu/Projs/EnDeep4mC-V2/data/4mC/4mC_D.melanogaster/test_pos.txt 失败: I/O operation on closed file.
+2025-05-20 22:51:33,559 - ERROR - 读取 /home/zqzhangshuyu/Projs/EnDeep4mC-V2/data/4mC/4mC_G.subterraneus2/train_pos.txt 失败: I/O operation on closed file.
+2025-05-20 22:51:33,559 - INFO - 4mC_D.melanogaster pos 总序列数: 0
+2025-05-20 22:51:33,559 - ERROR - 读取 /home/zqzhangshuyu/Projs/EnDeep4mC-V2/data/4mC/4mC_G.subterraneus/test_neg.txt 失败: I/O operation on closed file.
+2025-05-20 22:51:33,559 - ERROR - 读取 /home/zqzhangshuyu/Projs/EnDeep4mC-V2/data/4mC/4mC_R.chinensis/test_pos.txt 失败: I/O operation on closed file.
+2025-05-20 22:51:33,559 - INFO - 4mC_R.chinensis pos 总序列数: 0
+2025-05-20 22:51:33,559 - ERROR - 读取 /home/zqzhangshuyu/Projs/EnDeep4mC-V2/data/4mC/4mC_G.subterraneus2/test_pos.txt 失败: I/O operation on closed file.
+2025-05-20 22:51:33,559 - ERROR - 读取 /home/zqzhangshuyu/Projs/EnDeep4mC-V2/data/4mC/4mC_D.melanogaster/train_neg.txt 失败: I/O operation on closed file.
+2025-05-20 22:51:33,559 - INFO - 4mC_G.subterraneus neg 总序列数: 0
+2025-05-20 22:51:33,559 - INFO - 4mC_G.subterraneus2 pos 总序列数: 0
+2025-05-20 22:51:33,559 - ERROR - 读取 /home/zqzhangshuyu/Projs/EnDeep4mC-V2/data/4mC/4mC_R.chinensis/train_neg.txt 失败: I/O operation on closed file.
+2025-05-20 22:51:33,559 - ERROR - 读取 /home/zqzhangshuyu/Projs/EnDeep4mC-V2/data/4mC/4mC_D.melanogaster/test_neg.txt 失败: I/O operation on closed file.
+2025-05-20 22:51:33,559 - ERROR - 读取 /home/zqzhangshuyu/Projs/EnDeep4mC-V2/data/4mC/4mC_G.subterraneus2/train_neg.txt 失败: I/O operation on closed file.
+2025-05-20 22:51:33,559 - INFO - 4mC_D.melanogaster neg 总序列数: 0
+2025-05-20 22:51:33,559 - ERROR - 4mC_G.subterraneus 无有效序列，跳过处理
+2025-05-20 22:51:33,559 - ERROR - 4mC_D.melanogaster 无有效序列，跳过处理
+2025-05-20 22:51:33,559 - ERROR - 读取 /home/zqzhangshuyu/Projs/EnDeep4mC-V2/data/4mC/4mC_R.chinensis/test_neg.txt 失败: I/O operation on closed file.
+2025-05-20 22:51:33,559 - INFO - 4mC_C.equisetifolia train_pos.txt: 读取纯文本获得183条序列
+2025-05-20 22:51:33,559 - ERROR - 读取 /home/zqzhangshuyu/Projs/EnDeep4mC-V2/data/4mC/4mC_G.subterraneus2/test_neg.txt 失败: I/O operation on closed file.
+2025-05-20 22:51:33,559 - INFO - 4mC_R.chinensis neg 总序列数: 0
+2025-05-20 22:51:33,559 - INFO - 4mC_G.subterraneus2 neg 总序列数: 0
+2025-05-20 22:51:33,559 - ERROR - 4mC_G.subterraneus2 无有效序列，跳过处理
+2025-05-20 22:51:33,559 - ERROR - 4mC_R.chinensis 无有效序列，跳过处理
+2025-05-20 22:51:33,559 - INFO - 开始处理物种: 4mC_G.pickeringii2
+2025-05-20 22:51:33,560 - INFO - 4mC_G.pickeringii2 分类为: Microorganism
+2025-05-20 22:51:33,560 - INFO - 开始处理物种: 4mC_S.cerevisiae
+2025-05-20 22:51:33,560 - INFO - 开始处理物种: 4mC_mouse
+2025-05-20 22:51:33,560 - INFO - 4mC_S.cerevisiae 分类为: Microorganism
+2025-05-20 22:51:33,560 - ERROR - 读取 /home/zqzhangshuyu/Projs/EnDeep4mC-V2/data/4mC/4mC_G.pickeringii2/train_pos.txt 失败: I/O operation on closed file.
+2025-05-20 22:51:33,560 - INFO - 4mC_mouse 分类为: Unknown
+2025-05-20 22:51:33,560 - ERROR - 读取 /home/zqzhangshuyu/Projs/EnDeep4mC-V2/data/4mC/4mC_G.pickeringii2/test_pos.txt 失败: I/O operation on closed file.
+2025-05-20 22:51:33,560 - ERROR - 读取 /home/zqzhangshuyu/Projs/EnDeep4mC-V2/data/4mC/4mC_mouse/train_pos.txt 失败: I/O operation on closed file.
+2025-05-20 22:51:33,560 - INFO - 4mC_G.pickeringii2 pos 总序列数: 0
+2025-05-20 22:51:33,560 - ERROR - 读取 /home/zqzhangshuyu/Projs/EnDeep4mC-V2/data/4mC/4mC_mouse/test_pos.txt 失败: I/O operation on closed file.
+2025-05-20 22:51:33,560 - ERROR - 读取 /home/zqzhangshuyu/Projs/EnDeep4mC-V2/data/4mC/4mC_G.pickeringii2/train_neg.txt 失败: I/O operation on closed file.
+2025-05-20 22:51:33,560 - INFO - 4mC_C.equisetifolia test_pos.txt: 读取纯文本获得183条序列
+2025-05-20 22:51:33,560 - INFO - 4mC_mouse pos 总序列数: 0
+2025-05-20 22:51:33,560 - INFO - 4mC_C.equisetifolia pos 总序列数: 366
+2025-05-20 22:51:33,560 - ERROR - 读取 /home/zqzhangshuyu/Projs/EnDeep4mC-V2/data/4mC/4mC_G.pickeringii2/test_neg.txt 失败: I/O operation on closed file.
+2025-05-20 22:51:33,560 - ERROR - 读取 /home/zqzhangshuyu/Projs/EnDeep4mC-V2/data/4mC/4mC_mouse/train_neg.txt 失败: I/O operation on closed file.
+2025-05-20 22:51:33,560 - INFO - 4mC_G.pickeringii2 neg 总序列数: 0
+2025-05-20 22:51:33,560 - ERROR - 4mC_G.pickeringii2 无有效序列，跳过处理
+2025-05-20 22:51:33,560 - ERROR - 读取 /home/zqzhangshuyu/Projs/EnDeep4mC-V2/data/4mC/4mC_mouse/test_neg.txt 失败: I/O operation on closed file.
+2025-05-20 22:51:33,560 - INFO - 4mC_mouse neg 总序列数: 0
+2025-05-20 22:51:33,560 - ERROR - 4mC_mouse 无有效序列，跳过处理
+2025-05-20 22:51:33,560 - INFO - 4mC_C.equisetifolia train_neg.txt: 读取纯文本获得183条序列
+2025-05-20 22:51:33,560 - INFO - 4mC_C.equisetifolia test_neg.txt: 读取纯文本获得183条序列
+2025-05-20 22:51:33,560 - INFO - 4mC_C.equisetifolia neg 总序列数: 366
+2025-05-20 22:51:33,561 - INFO - 4mC_S.cerevisiae train_pos.txt: 读取纯文本获得990条序列
+2025-05-20 22:51:33,561 - INFO - 4mC_E.coli train_pos.txt: 读取纯文本获得1908条序列
+2025-05-20 22:51:33,561 - INFO - 4mC_E.coli test_pos.txt: 读取纯文本获得160条序列
+2025-05-20 22:51:33,561 - INFO - 4mC_S.cerevisiae test_pos.txt: 读取纯文本获得989条序列
+2025-05-20 22:51:33,561 - INFO - 4mC_S.cerevisiae pos 总序列数: 1979
+2025-05-20 22:51:33,561 - INFO - 4mC_E.coli pos 总序列数: 2068
+2025-05-20 22:51:33,562 - INFO - 4mC_S.cerevisiae train_neg.txt: 读取纯文本获得990条序列
+2025-05-20 22:51:33,563 - INFO - 4mC_S.cerevisiae test_neg.txt: 读取纯文本获得989条序列
+2025-05-20 22:51:33,563 - INFO - 4mC_S.cerevisiae neg 总序列数: 1979
+2025-05-20 22:51:33,563 - INFO - 4mC_C.equisetifolia k=3: 正样本64种kmer，负样本64种kmer
+2025-05-20 22:51:33,563 - INFO - 4mC_E.coli train_neg.txt: 读取纯文本获得1908条序列
+2025-05-20 22:51:33,564 - INFO - 4mC_E.coli test_neg.txt: 读取纯文本获得160条序列
+2025-05-20 22:51:33,564 - INFO - 4mC_E.coli neg 总序列数: 2068
+2025-05-20 22:51:33,564 - INFO - 4mC_F.vesca train_pos.txt: 读取纯文本获得7899条序列
+2025-05-20 22:51:33,565 - INFO - 4mC_Tolypocladium train_pos.txt: 读取纯文本获得7664条序列
+2025-05-20 22:51:33,566 - INFO - 4mC_C.equisetifolia k=4: 正样本256种kmer，负样本256种kmer
+2025-05-20 22:51:33,569 - INFO - 4mC_C.equisetifolia k=5: 正样本1023种kmer，负样本1018种kmer
+2025-05-20 22:51:33,570 - INFO - 4mC_F.vesca test_pos.txt: 读取纯文本获得7898条序列
+2025-05-20 22:51:33,570 - INFO - 4mC_F.vesca pos 总序列数: 15797
+2025-05-20 22:51:33,571 - INFO - 4mC_Tolypocladium test_pos.txt: 读取纯文本获得7663条序列
+2025-05-20 22:51:33,571 - INFO - 4mC_Tolypocladium pos 总序列数: 15327
+2025-05-20 22:51:33,575 - INFO - 4mC_F.vesca train_neg.txt: 读取纯文本获得7899条序列
+2025-05-20 22:51:33,576 - INFO - 4mC_Tolypocladium train_neg.txt: 读取纯文本获得7664条序列
+2025-05-20 22:51:33,578 - INFO - 4mC_S.cerevisiae k=3: 正样本64种kmer，负样本64种kmer
+2025-05-20 22:51:33,580 - INFO - 4mC_F.vesca test_neg.txt: 读取纯文本获得7898条序列
+2025-05-20 22:51:33,580 - INFO - 4mC_F.vesca neg 总序列数: 15797
+2025-05-20 22:51:33,582 - INFO - 4mC_Tolypocladium test_neg.txt: 读取纯文本获得7663条序列
+2025-05-20 22:51:33,582 - INFO - 4mC_Tolypocladium neg 总序列数: 15327
+2025-05-20 22:51:33,590 - INFO - 4mC_E.coli k=3: 正样本64种kmer，负样本64种kmer
+2025-05-20 22:51:33,593 - INFO - 4mC_S.cerevisiae k=4: 正样本256种kmer，负样本256种kmer
+2025-05-20 22:51:33,607 - INFO - 4mC_S.cerevisiae k=5: 正样本1024种kmer，负样本1024种kmer
+2025-05-20 22:51:33,616 - INFO - 4mC_E.coli k=4: 正样本256种kmer，负样本256种kmer
+2025-05-20 22:51:33,633 - INFO - 4mC_E.coli k=5: 正样本1023种kmer，负样本1024种kmer
+2025-05-20 22:51:33,703 - INFO - 4mC_Tolypocladium k=3: 正样本64种kmer，负样本64种kmer
+2025-05-20 22:51:33,704 - INFO - 4mC_F.vesca k=3: 正样本64种kmer，负样本64种kmer
+2025-05-20 22:51:33,814 - INFO - 4mC_Tolypocladium k=4: 正样本256种kmer，负样本256种kmer
+2025-05-20 22:51:33,821 - INFO - 4mC_F.vesca k=4: 正样本256种kmer，负样本256种kmer
+2025-05-20 22:51:33,920 - INFO - 4mC_Tolypocladium k=5: 正样本1024种kmer，负样本1024种kmer
+2025-05-20 22:51:33,931 - INFO - 4mC_F.vesca k=5: 正样本1024种kmer，负样本1024种kmer
+2025-05-20 22:51:36,627 - WARNING - 发现无效p值0.0，自动修正为1e-10
+2025-05-20 22:51:37,124 - INFO - 分析完成！结果保存在: /home/zqzhangshuyu/Projs/EnDeep4mC-V2/evaluations/kmer_analysis
+2025-05-20 22:52:44,754 - INFO - 未启用白名单，处理所有物种
+2025-05-20 22:52:44,754 - INFO - 将处理以下物种(18个):
+- 4mC_A.thaliana2
+- 4mC_C.elegans2
+- 4mC_D.melanogaster2
+- 4mC_G.pickeringii
+- 4mC_G.subterraneus
+- 4mC_Tolypocladium
+- 4mC_C.elegans
+- 4mC_A.thaliana
+- 4mC_F.vesca
+- 4mC_E.coli2
+- 4mC_E.coli
+- 4mC_C.equisetifolia
+- 4mC_D.melanogaster
+- 4mC_R.chinensis
+- 4mC_G.subterraneus2
+- 4mC_G.pickeringii2
+- 4mC_S.cerevisiae
+- 4mC_mouse
+2025-05-20 22:52:44,774 - INFO - 开始处理物种: 4mC_A.thaliana2
+2025-05-20 22:52:44,774 - INFO - 4mC_A.thaliana2 分类为: Plant
+2025-05-20 22:52:44,774 - INFO - 开始处理物种: 4mC_Tolypocladium
+2025-05-20 22:52:44,774 - INFO - 开始处理物种: 4mC_C.elegans
+2025-05-20 22:52:44,774 - INFO - 开始处理物种: 4mC_A.thaliana
+2025-05-20 22:52:44,774 - INFO - 开始处理物种: 4mC_G.pickeringii
+2025-05-20 22:52:44,774 - INFO - 4mC_C.elegans 分类为: Animal
+2025-05-20 22:52:44,774 - INFO - 4mC_Tolypocladium 分类为: Microorganism
+2025-05-20 22:52:44,774 - INFO - 4mC_A.thaliana 分类为: Plant
+2025-05-20 22:52:44,774 - INFO - 开始处理物种: 4mC_G.subterraneus
+2025-05-20 22:52:44,774 - INFO - 开始处理物种: 4mC_C.elegans2
+2025-05-20 22:52:44,775 - ERROR - 读取 /home/zqzhangshuyu/Projs/EnDeep4mC-V2/data/4mC/4mC_A.thaliana/train_pos.txt 失败: I/O operation on closed file.
+2025-05-20 22:52:44,774 - INFO - 4mC_G.pickeringii 分类为: Microorganism
+2025-05-20 22:52:44,775 - ERROR - 读取 /home/zqzhangshuyu/Projs/EnDeep4mC-V2/data/4mC/4mC_C.elegans/train_pos.txt 失败: I/O operation on closed file.
+2025-05-20 22:52:44,775 - ERROR - 读取 /home/zqzhangshuyu/Projs/EnDeep4mC-V2/data/4mC/4mC_A.thaliana/test_pos.txt 失败: I/O operation on closed file.
+2025-05-20 22:52:44,775 - INFO - 4mC_G.subterraneus 分类为: Microorganism
+2025-05-20 22:52:44,775 - ERROR - 读取 /home/zqzhangshuyu/Projs/EnDeep4mC-V2/data/4mC/4mC_A.thaliana2/train_pos.txt 失败: I/O operation on closed file.
+2025-05-20 22:52:44,775 - INFO - 4mC_A.thaliana pos 总序列数: 0
+2025-05-20 22:52:44,775 - INFO - 4mC_C.elegans2 分类为: Animal
+2025-05-20 22:52:44,775 - ERROR - 读取 /home/zqzhangshuyu/Projs/EnDeep4mC-V2/data/4mC/4mC_A.thaliana2/test_pos.txt 失败: I/O operation on closed file.
+2025-05-20 22:52:44,775 - INFO - 4mC_A.thaliana2 pos 总序列数: 0
+2025-05-20 22:52:44,774 - INFO - 开始处理物种: 4mC_D.melanogaster2
+2025-05-20 22:52:44,775 - ERROR - 读取 /home/zqzhangshuyu/Projs/EnDeep4mC-V2/data/4mC/4mC_A.thaliana/train_neg.txt 失败: I/O operation on closed file.
+2025-05-20 22:52:44,775 - ERROR - 读取 /home/zqzhangshuyu/Projs/EnDeep4mC-V2/data/4mC/4mC_A.thaliana2/train_neg.txt 失败: I/O operation on closed file.
+2025-05-20 22:52:44,775 - ERROR - 读取 /home/zqzhangshuyu/Projs/EnDeep4mC-V2/data/4mC/4mC_C.elegans/test_pos.txt 失败: I/O operation on closed file.
+2025-05-20 22:52:44,775 - ERROR - 读取 /home/zqzhangshuyu/Projs/EnDeep4mC-V2/data/4mC/4mC_G.subterraneus/train_pos.txt 失败: I/O operation on closed file.
+2025-05-20 22:52:44,775 - ERROR - 读取 /home/zqzhangshuyu/Projs/EnDeep4mC-V2/data/4mC/4mC_C.elegans2/train_pos.txt 失败: I/O operation on closed file.
+2025-05-20 22:52:44,775 - ERROR - 读取 /home/zqzhangshuyu/Projs/EnDeep4mC-V2/data/4mC/4mC_A.thaliana2/test_neg.txt 失败: I/O operation on closed file.
+2025-05-20 22:52:44,775 - ERROR - 读取 /home/zqzhangshuyu/Projs/EnDeep4mC-V2/data/4mC/4mC_A.thaliana/test_neg.txt 失败: I/O operation on closed file.
+2025-05-20 22:52:44,775 - INFO - 4mC_C.elegans pos 总序列数: 0
+2025-05-20 22:52:44,775 - INFO - 4mC_A.thaliana2 neg 总序列数: 0
+2025-05-20 22:52:44,775 - INFO - 4mC_A.thaliana neg 总序列数: 0
+2025-05-20 22:52:44,775 - ERROR - 4mC_A.thaliana2 无有效序列，跳过处理
+2025-05-20 22:52:44,775 - ERROR - 读取 /home/zqzhangshuyu/Projs/EnDeep4mC-V2/data/4mC/4mC_G.pickeringii/train_pos.txt 失败: I/O operation on closed file.
+2025-05-20 22:52:44,775 - ERROR - 4mC_A.thaliana 无有效序列，跳过处理
+2025-05-20 22:52:44,775 - ERROR - 读取 /home/zqzhangshuyu/Projs/EnDeep4mC-V2/data/4mC/4mC_C.elegans2/test_pos.txt 失败: I/O operation on closed file.
+2025-05-20 22:52:44,775 - ERROR - 读取 /home/zqzhangshuyu/Projs/EnDeep4mC-V2/data/4mC/4mC_G.subterraneus/test_pos.txt 失败: I/O operation on closed file.
+2025-05-20 22:52:44,775 - ERROR - 读取 /home/zqzhangshuyu/Projs/EnDeep4mC-V2/data/4mC/4mC_C.elegans/train_neg.txt 失败: I/O operation on closed file.
+2025-05-20 22:52:44,775 - INFO - 4mC_C.elegans2 pos 总序列数: 0
+2025-05-20 22:52:44,775 - INFO - 4mC_G.subterraneus pos 总序列数: 0
+2025-05-20 22:52:44,775 - ERROR - 读取 /home/zqzhangshuyu/Projs/EnDeep4mC-V2/data/4mC/4mC_C.elegans/test_neg.txt 失败: I/O operation on closed file.
+2025-05-20 22:52:44,775 - ERROR - 读取 /home/zqzhangshuyu/Projs/EnDeep4mC-V2/data/4mC/4mC_G.pickeringii/test_pos.txt 失败: I/O operation on closed file.
+2025-05-20 22:52:44,775 - ERROR - 读取 /home/zqzhangshuyu/Projs/EnDeep4mC-V2/data/4mC/4mC_C.elegans2/train_neg.txt 失败: I/O operation on closed file.
+2025-05-20 22:52:44,775 - INFO - 4mC_D.melanogaster2 分类为: Animal
+2025-05-20 22:52:44,775 - ERROR - 读取 /home/zqzhangshuyu/Projs/EnDeep4mC-V2/data/4mC/4mC_G.subterraneus/train_neg.txt 失败: I/O operation on closed file.
+2025-05-20 22:52:44,775 - INFO - 4mC_C.elegans neg 总序列数: 0
+2025-05-20 22:52:44,775 - INFO - 4mC_G.pickeringii pos 总序列数: 0
+2025-05-20 22:52:44,775 - ERROR - 4mC_C.elegans 无有效序列，跳过处理
+2025-05-20 22:52:44,775 - ERROR - 读取 /home/zqzhangshuyu/Projs/EnDeep4mC-V2/data/4mC/4mC_C.elegans2/test_neg.txt 失败: I/O operation on closed file.
+2025-05-20 22:52:44,775 - ERROR - 读取 /home/zqzhangshuyu/Projs/EnDeep4mC-V2/data/4mC/4mC_G.subterraneus/test_neg.txt 失败: I/O operation on closed file.
+2025-05-20 22:52:44,775 - INFO - 开始处理物种: 4mC_F.vesca
+2025-05-20 22:52:44,775 - INFO - 4mC_C.elegans2 neg 总序列数: 0
+2025-05-20 22:52:44,775 - INFO - 4mC_G.subterraneus neg 总序列数: 0
+2025-05-20 22:52:44,775 - INFO - 4mC_F.vesca 分类为: Plant
+2025-05-20 22:52:44,775 - ERROR - 4mC_C.elegans2 无有效序列，跳过处理
+2025-05-20 22:52:44,775 - ERROR - 读取 /home/zqzhangshuyu/Projs/EnDeep4mC-V2/data/4mC/4mC_G.pickeringii/train_neg.txt 失败: I/O operation on closed file.
+2025-05-20 22:52:44,775 - ERROR - 4mC_G.subterraneus 无有效序列，跳过处理
+2025-05-20 22:52:44,775 - INFO - 开始处理物种: 4mC_E.coli2
+2025-05-20 22:52:44,775 - INFO - 4mC_E.coli2 分类为: Microorganism
+2025-05-20 22:52:44,775 - ERROR - 读取 /home/zqzhangshuyu/Projs/EnDeep4mC-V2/data/4mC/4mC_G.pickeringii/test_neg.txt 失败: I/O operation on closed file.
+2025-05-20 22:52:44,775 - ERROR - 读取 /home/zqzhangshuyu/Projs/EnDeep4mC-V2/data/4mC/4mC_E.coli2/train_pos.txt 失败: I/O operation on closed file.
+2025-05-20 22:52:44,775 - INFO - 4mC_G.pickeringii neg 总序列数: 0
+2025-05-20 22:52:44,775 - ERROR - 读取 /home/zqzhangshuyu/Projs/EnDeep4mC-V2/data/4mC/4mC_E.coli2/test_pos.txt 失败: I/O operation on closed file.
+2025-05-20 22:52:44,775 - INFO - 开始处理物种: 4mC_E.coli
+2025-05-20 22:52:44,775 - ERROR - 4mC_G.pickeringii 无有效序列，跳过处理
+2025-05-20 22:52:44,775 - INFO - 4mC_E.coli2 pos 总序列数: 0
+2025-05-20 22:52:44,775 - INFO - 4mC_E.coli 分类为: Microorganism
+2025-05-20 22:52:44,775 - ERROR - 读取 /home/zqzhangshuyu/Projs/EnDeep4mC-V2/data/4mC/4mC_E.coli2/train_neg.txt 失败: I/O operation on closed file.
+2025-05-20 22:52:44,775 - ERROR - 读取 /home/zqzhangshuyu/Projs/EnDeep4mC-V2/data/4mC/4mC_E.coli2/test_neg.txt 失败: I/O operation on closed file.
+2025-05-20 22:52:44,775 - INFO - 4mC_E.coli2 neg 总序列数: 0
+2025-05-20 22:52:44,776 - ERROR - 4mC_E.coli2 无有效序列，跳过处理
+2025-05-20 22:52:44,775 - ERROR - 读取 /home/zqzhangshuyu/Projs/EnDeep4mC-V2/data/4mC/4mC_D.melanogaster2/train_pos.txt 失败: I/O operation on closed file.
+2025-05-20 22:52:44,776 - INFO - 开始处理物种: 4mC_C.equisetifolia
+2025-05-20 22:52:44,776 - ERROR - 读取 /home/zqzhangshuyu/Projs/EnDeep4mC-V2/data/4mC/4mC_D.melanogaster2/test_pos.txt 失败: I/O operation on closed file.
+2025-05-20 22:52:44,776 - INFO - 4mC_C.equisetifolia 分类为: Plant
+2025-05-20 22:52:44,776 - INFO - 4mC_D.melanogaster2 pos 总序列数: 0
+2025-05-20 22:52:44,776 - INFO - 开始处理物种: 4mC_D.melanogaster
+2025-05-20 22:52:44,776 - INFO - 4mC_D.melanogaster 分类为: Animal
+2025-05-20 22:52:44,776 - INFO - 开始处理物种: 4mC_R.chinensis
+2025-05-20 22:52:44,776 - INFO - 开始处理物种: 4mC_G.subterraneus2
+2025-05-20 22:52:44,776 - ERROR - 读取 /home/zqzhangshuyu/Projs/EnDeep4mC-V2/data/4mC/4mC_D.melanogaster/train_pos.txt 失败: I/O operation on closed file.
+2025-05-20 22:52:44,776 - INFO - 4mC_G.subterraneus2 分类为: Microorganism
+2025-05-20 22:52:44,776 - ERROR - 读取 /home/zqzhangshuyu/Projs/EnDeep4mC-V2/data/4mC/4mC_D.melanogaster2/train_neg.txt 失败: I/O operation on closed file.
+2025-05-20 22:52:44,776 - INFO - 4mC_R.chinensis 分类为: Plant
+2025-05-20 22:52:44,776 - INFO - 4mC_C.equisetifolia train_pos.txt: 读取纯文本获得183条序列
+2025-05-20 22:52:44,776 - ERROR - 读取 /home/zqzhangshuyu/Projs/EnDeep4mC-V2/data/4mC/4mC_D.melanogaster/test_pos.txt 失败: I/O operation on closed file.
+2025-05-20 22:52:44,776 - ERROR - 读取 /home/zqzhangshuyu/Projs/EnDeep4mC-V2/data/4mC/4mC_G.subterraneus2/train_pos.txt 失败: I/O operation on closed file.
+2025-05-20 22:52:44,776 - INFO - 4mC_D.melanogaster pos 总序列数: 0
+2025-05-20 22:52:44,776 - ERROR - 读取 /home/zqzhangshuyu/Projs/EnDeep4mC-V2/data/4mC/4mC_G.subterraneus2/test_pos.txt 失败: I/O operation on closed file.
+2025-05-20 22:52:44,776 - ERROR - 读取 /home/zqzhangshuyu/Projs/EnDeep4mC-V2/data/4mC/4mC_R.chinensis/train_pos.txt 失败: I/O operation on closed file.
+2025-05-20 22:52:44,776 - INFO - 4mC_G.subterraneus2 pos 总序列数: 0
+2025-05-20 22:52:44,776 - ERROR - 读取 /home/zqzhangshuyu/Projs/EnDeep4mC-V2/data/4mC/4mC_D.melanogaster/train_neg.txt 失败: I/O operation on closed file.
+2025-05-20 22:52:44,776 - ERROR - 读取 /home/zqzhangshuyu/Projs/EnDeep4mC-V2/data/4mC/4mC_G.subterraneus2/train_neg.txt 失败: I/O operation on closed file.
+2025-05-20 22:52:44,776 - ERROR - 读取 /home/zqzhangshuyu/Projs/EnDeep4mC-V2/data/4mC/4mC_D.melanogaster2/test_neg.txt 失败: I/O operation on closed file.
+2025-05-20 22:52:44,776 - ERROR - 读取 /home/zqzhangshuyu/Projs/EnDeep4mC-V2/data/4mC/4mC_R.chinensis/test_pos.txt 失败: I/O operation on closed file.
+2025-05-20 22:52:44,776 - ERROR - 读取 /home/zqzhangshuyu/Projs/EnDeep4mC-V2/data/4mC/4mC_D.melanogaster/test_neg.txt 失败: I/O operation on closed file.
+2025-05-20 22:52:44,776 - ERROR - 读取 /home/zqzhangshuyu/Projs/EnDeep4mC-V2/data/4mC/4mC_G.subterraneus2/test_neg.txt 失败: I/O operation on closed file.
+2025-05-20 22:52:44,776 - INFO - 4mC_R.chinensis pos 总序列数: 0
+2025-05-20 22:52:44,776 - INFO - 4mC_G.subterraneus2 neg 总序列数: 0
+2025-05-20 22:52:44,776 - INFO - 4mC_D.melanogaster neg 总序列数: 0
+2025-05-20 22:52:44,776 - ERROR - 4mC_G.subterraneus2 无有效序列，跳过处理
+2025-05-20 22:52:44,776 - INFO - 4mC_D.melanogaster2 neg 总序列数: 0
+2025-05-20 22:52:44,776 - ERROR - 4mC_D.melanogaster 无有效序列，跳过处理
+2025-05-20 22:52:44,776 - INFO - 4mC_C.equisetifolia test_pos.txt: 读取纯文本获得183条序列
+2025-05-20 22:52:44,776 - ERROR - 读取 /home/zqzhangshuyu/Projs/EnDeep4mC-V2/data/4mC/4mC_R.chinensis/train_neg.txt 失败: I/O operation on closed file.
+2025-05-20 22:52:44,776 - INFO - 4mC_C.equisetifolia pos 总序列数: 366
+2025-05-20 22:52:44,776 - ERROR - 4mC_D.melanogaster2 无有效序列，跳过处理
+2025-05-20 22:52:44,776 - INFO - 开始处理物种: 4mC_G.pickeringii2
+2025-05-20 22:52:44,776 - INFO - 4mC_G.pickeringii2 分类为: Microorganism
+2025-05-20 22:52:44,776 - INFO - 开始处理物种: 4mC_S.cerevisiae
+2025-05-20 22:52:44,776 - ERROR - 读取 /home/zqzhangshuyu/Projs/EnDeep4mC-V2/data/4mC/4mC_R.chinensis/test_neg.txt 失败: I/O operation on closed file.
+2025-05-20 22:52:44,776 - INFO - 4mC_S.cerevisiae 分类为: Microorganism
+2025-05-20 22:52:44,776 - ERROR - 读取 /home/zqzhangshuyu/Projs/EnDeep4mC-V2/data/4mC/4mC_G.pickeringii2/train_pos.txt 失败: I/O operation on closed file.
+2025-05-20 22:52:44,777 - INFO - 4mC_R.chinensis neg 总序列数: 0
+2025-05-20 22:52:44,777 - ERROR - 4mC_R.chinensis 无有效序列，跳过处理
+2025-05-20 22:52:44,777 - ERROR - 读取 /home/zqzhangshuyu/Projs/EnDeep4mC-V2/data/4mC/4mC_G.pickeringii2/test_pos.txt 失败: I/O operation on closed file.
+2025-05-20 22:52:44,777 - INFO - 4mC_G.pickeringii2 pos 总序列数: 0
+2025-05-20 22:52:44,777 - ERROR - 读取 /home/zqzhangshuyu/Projs/EnDeep4mC-V2/data/4mC/4mC_G.pickeringii2/train_neg.txt 失败: I/O operation on closed file.
+2025-05-20 22:52:44,777 - INFO - 开始处理物种: 4mC_mouse
+2025-05-20 22:52:44,777 - INFO - 4mC_mouse 分类为: Unknown
+2025-05-20 22:52:44,777 - ERROR - 读取 /home/zqzhangshuyu/Projs/EnDeep4mC-V2/data/4mC/4mC_G.pickeringii2/test_neg.txt 失败: I/O operation on closed file.
+2025-05-20 22:52:44,777 - INFO - 4mC_C.equisetifolia train_neg.txt: 读取纯文本获得183条序列
+2025-05-20 22:52:44,777 - INFO - 4mC_G.pickeringii2 neg 总序列数: 0
+2025-05-20 22:52:44,777 - ERROR - 读取 /home/zqzhangshuyu/Projs/EnDeep4mC-V2/data/4mC/4mC_mouse/train_pos.txt 失败: I/O operation on closed file.
+2025-05-20 22:52:44,777 - ERROR - 4mC_G.pickeringii2 无有效序列，跳过处理
+2025-05-20 22:52:44,777 - ERROR - 读取 /home/zqzhangshuyu/Projs/EnDeep4mC-V2/data/4mC/4mC_mouse/test_pos.txt 失败: I/O operation on closed file.
+2025-05-20 22:52:44,777 - INFO - 4mC_mouse pos 总序列数: 0
+2025-05-20 22:52:44,777 - ERROR - 读取 /home/zqzhangshuyu/Projs/EnDeep4mC-V2/data/4mC/4mC_mouse/train_neg.txt 失败: I/O operation on closed file.
+2025-05-20 22:52:44,777 - ERROR - 读取 /home/zqzhangshuyu/Projs/EnDeep4mC-V2/data/4mC/4mC_mouse/test_neg.txt 失败: I/O operation on closed file.
+2025-05-20 22:52:44,777 - INFO - 4mC_mouse neg 总序列数: 0
+2025-05-20 22:52:44,777 - ERROR - 4mC_mouse 无有效序列，跳过处理
+2025-05-20 22:52:44,777 - INFO - 4mC_C.equisetifolia test_neg.txt: 读取纯文本获得183条序列
+2025-05-20 22:52:44,777 - INFO - 4mC_C.equisetifolia neg 总序列数: 366
+2025-05-20 22:52:44,777 - INFO - 4mC_S.cerevisiae train_pos.txt: 读取纯文本获得990条序列
+2025-05-20 22:52:44,778 - INFO - 4mC_E.coli train_pos.txt: 读取纯文本获得1908条序列
+2025-05-20 22:52:44,778 - INFO - 4mC_E.coli test_pos.txt: 读取纯文本获得160条序列
+2025-05-20 22:52:44,778 - INFO - 4mC_E.coli pos 总序列数: 2068
+2025-05-20 22:52:44,778 - INFO - 4mC_S.cerevisiae test_pos.txt: 读取纯文本获得989条序列
+2025-05-20 22:52:44,778 - INFO - 4mC_S.cerevisiae pos 总序列数: 1979
+2025-05-20 22:52:44,779 - INFO - 4mC_S.cerevisiae train_neg.txt: 读取纯文本获得990条序列
+2025-05-20 22:52:44,780 - INFO - 4mC_S.cerevisiae test_neg.txt: 读取纯文本获得989条序列
+2025-05-20 22:52:44,780 - INFO - 4mC_S.cerevisiae neg 总序列数: 1979
+2025-05-20 22:52:44,780 - INFO - 4mC_E.coli train_neg.txt: 读取纯文本获得1908条序列
+2025-05-20 22:52:44,781 - INFO - 4mC_E.coli test_neg.txt: 读取纯文本获得160条序列
+2025-05-20 22:52:44,781 - INFO - 4mC_E.coli neg 总序列数: 2068
+2025-05-20 22:52:44,781 - INFO - 4mC_Tolypocladium train_pos.txt: 读取纯文本获得7664条序列
+2025-05-20 22:52:44,781 - INFO - 4mC_C.equisetifolia k=3: 正样本64种kmer，负样本64种kmer
+2025-05-20 22:52:44,783 - INFO - 4mC_F.vesca train_pos.txt: 读取纯文本获得7899条序列
+2025-05-20 22:52:44,786 - INFO - 4mC_C.equisetifolia k=4: 正样本256种kmer，负样本256种kmer
+2025-05-20 22:52:44,787 - INFO - 4mC_Tolypocladium test_pos.txt: 读取纯文本获得7663条序列
+2025-05-20 22:52:44,787 - INFO - 4mC_Tolypocladium pos 总序列数: 15327
+2025-05-20 22:52:44,789 - INFO - 4mC_F.vesca test_pos.txt: 读取纯文本获得7898条序列
+2025-05-20 22:52:44,789 - INFO - 4mC_F.vesca pos 总序列数: 15797
+2025-05-20 22:52:44,791 - INFO - 4mC_C.equisetifolia k=5: 正样本1023种kmer，负样本1018种kmer
+2025-05-20 22:52:44,793 - INFO - 4mC_Tolypocladium train_neg.txt: 读取纯文本获得7664条序列
+2025-05-20 22:52:44,794 - INFO - 4mC_F.vesca train_neg.txt: 读取纯文本获得7899条序列
+2025-05-20 22:52:44,796 - INFO - 4mC_S.cerevisiae k=3: 正样本64种kmer，负样本64种kmer
+2025-05-20 22:52:44,798 - INFO - 4mC_Tolypocladium test_neg.txt: 读取纯文本获得7663条序列
+2025-05-20 22:52:44,798 - INFO - 4mC_Tolypocladium neg 总序列数: 15327
+2025-05-20 22:52:44,799 - INFO - 4mC_F.vesca test_neg.txt: 读取纯文本获得7898条序列
+2025-05-20 22:52:44,799 - INFO - 4mC_F.vesca neg 总序列数: 15797
+2025-05-20 22:52:44,807 - INFO - 4mC_E.coli k=3: 正样本64种kmer，负样本64种kmer
+2025-05-20 22:52:44,810 - INFO - 4mC_S.cerevisiae k=4: 正样本256种kmer，负样本256种kmer
+2025-05-20 22:52:44,826 - INFO - 4mC_S.cerevisiae k=5: 正样本1024种kmer，负样本1024种kmer
+2025-05-20 22:52:44,828 - INFO - 4mC_E.coli k=4: 正样本256种kmer，负样本256种kmer
+2025-05-20 22:52:44,843 - INFO - 4mC_E.coli k=5: 正样本1023种kmer，负样本1024种kmer
+2025-05-20 22:52:44,913 - INFO - 4mC_Tolypocladium k=3: 正样本64种kmer，负样本64种kmer
+2025-05-20 22:52:44,918 - INFO - 4mC_F.vesca k=3: 正样本64种kmer，负样本64种kmer
+2025-05-20 22:52:45,023 - INFO - 4mC_Tolypocladium k=4: 正样本256种kmer，负样本256种kmer
+2025-05-20 22:52:45,030 - INFO - 4mC_F.vesca k=4: 正样本256种kmer，负样本256种kmer
+2025-05-20 22:52:45,135 - INFO - 4mC_Tolypocladium k=5: 正样本1024种kmer，负样本1024种kmer
+2025-05-20 22:52:45,144 - INFO - 4mC_F.vesca k=5: 正样本1024种kmer，负样本1024种kmer
+2025-05-20 22:52:47,888 - WARNING - 发现无效p值0.0，自动修正为1e-10
+2025-05-20 22:52:48,370 - INFO - 分析完成！结果保存在: /home/zqzhangshuyu/Projs/EnDeep4mC-V2/evaluations/kmer_analysis
