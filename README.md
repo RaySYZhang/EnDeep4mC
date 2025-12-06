@@ -101,6 +101,6 @@ Some supplementary tools involved in this study, only used for evaluation testin
 A web server built based on the proposed EnDeep4mC model, which can be used online by users.
 
 ## Software Availability
-- Web Server Access: http://112.124.26.17:7012
-- Source Code Repository: https://github.com/ShuyuZhang0115/EnDeep4mC
+- Web Server Access: http://lab.malab.cn/~lxm/EnDeep4mC
+- Source Code Repository: https://github.com/RaySYZhang/EnDeep4mC
 - The live web server provides immediate access to the prediction functionality, while the GitHub repository contains complete implementation for local deployment and methodological transparency. Both resources include comprehensive documentation supporting research reproducibility and framework extension.
