@@ -4,8 +4,8 @@
 EnDeep4mC is a deep learning framework for predicting DNA N4-methylcytosine sites through dual-adaptive feature encoding and ensemble learning. This repository contains the complete implementation, pre-trained models, and evaluation scripts.
 
 ## Quick Links
-- **Web Server**: http://112.124.26.17:7012
-- **Source Code**: https://github.com/ShuyuZhang0115/EnDeep4mC
+- **Web Server**: http://lab.malab.cn/~lxm/EnDeep4mC
+- **Source Code**: https://github.com/RaySYZhang/EnDeep4mC
 
 ## System Requirements
 
