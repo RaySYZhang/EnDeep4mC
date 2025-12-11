@@ -28,8 +28,8 @@ from feature_selection import load_top_features, get_feature_methods
 
 # Configs
 DATASETS = [
-    '4mC_A.thaliana', '4mC_C.elegans', '4mC_D.melanogaster', '4mC_E.coli', '4mC_G.subterraneus', '4mC_G.pickeringii'
-    #'4mC_E.coli'
+    '4mC_A.thaliana', '4mC_C.elegans', '4mC_D.melanogaster', '4mC_E.coli', '4mC_G.subterraneus', '4mC_G.pickeringii',
+    '4mC_A.thaliana2', '4mC_C.elegans2', '4mC_C.equisetifolia', '4mC_D.melanogaster2', '4mC_E.coli2', '4mC_F.vesca', '4mC_G.pickeringii2', '4mC_G.subterraneus2', '4mC_S.cerevisiae', '4mC_Tolypocladium'
 ]
 
 MODEL_CONFIGS = [

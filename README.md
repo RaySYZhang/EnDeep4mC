@@ -34,8 +34,12 @@ model_executor = ThreadPoolExecutor(max_workers=4)    # Model inference threads
 feature_executor = ProcessPoolExecutor(max_workers=4) # Feature generation processes
 
 # Supported species and models
-SPECIES_LIST = ['4mC_A.thaliana', '4mC_C.elegans', '4mC_D.melanogaster',
-                '4mC_E.coli', '4mC_G.subterraneus', '4mC_G.pickeringii']
+SPECIES_LIST = [
+    '4mC_A.thaliana', '4mC_C.elegans', '4mC_D.melanogaster', '4mC_E.coli', '4mC_G.subterraneus', '4mC_G.pickeringii', # benchmark
+    '4mC_A.thaliana2', '4mC_C.elegans2', '4mC_D.melanogaster2', '4mC_E.coli2', '4mC_G.subterraneus2', '4mC_G.pickeringii2',
+    '4mC_C.equisetifolia', '4mC_F.vesca', '4mC_S.cerevisiae', '4mC_Tolypocladium', '4mC_R.chinensis',
+    '4mC_Enterococcus_faecium', '4mC_Klebsiella_pneumoniae', '4mC_Listeria_monocytogenes'
+    ]
 BASE_MODELS = ['CNN', 'BLSTM', 'Transformer']
 ```
 
@@ -54,38 +58,35 @@ Evaluation results of various experiments.
 
 ## feature_engineering
 The feature engineering module, which can be transferred to the feature selection & encoding process of other deep learning models.
-- fea_index.py: Performance quantification functions for 14 features across 6 species.
-- fea_index_extra.py: Performance quantification functions for 14 features across 10 supplementary species.
-- feature_selection.py: Feature selection support functions (6 species).
-- feature_selection_extra.py: Feature selection support functions (10 supplementary species).
-- ifs_on_base_models.py: Species-model joint incremental feature selection function (6 species).
-- ifs_on_base_models_extra.py: Species-model joint incremental feature selection function (10 supplementary species).
+- fea_index.py: Performance quantification script for different feature encoding methods across species.
+- feature_selection.py: Feature selection support script.
+- ifs_on_base_models.py: Species-model joint incremental feature selection script.
 - fea_index: Stores the results of running fea_index.py.
-- fea_index_extra_species: Stores the results of running fea_index_extra.py.
 - ifs_result: Stores the results of running ifs_on_base_models.py.
-- ifs_result_extra_species: Stores the results of running ifs_on_base_models_extra.py.
 
 ## fs
-Contains detailed definitions of several feature encoding methods from the biological tool iLearn. We mainly referenced the definitions of 14 candidate feature encoding methods from the open-source code of EnDeep4mC mentioned above.
+Contains detailed definitions of several feature encoding methods from the biological tool iLearn.
+We mainly referenced the definitions of 14 candidate feature encoding methods from the open-source codes of EpiTEAmDNA.
 
-## log
-Log files of main experiments.
+## logs
+Logs files of main experiments.
 
 ## models
 Definitions of the deep learning models proposed in this study.
-- deep_models: Contains definitions of 3 deep learning base classifiers.
-- pretrain_ensemble_model_5cv: Definitions and pre-training scripts for stacked ensemble models (5-fold cross-validation).
-- pretrain_ensemble_model_indiv: Definitions and pre-training scripts for stacked ensemble models (independent test set validation).
+- deep_models: Contains definitions of 3 deep learning base classifiers (CNN, Bi-LSTM and Transformer).
+- EnDeep4mC_5cv.py: Definitions of our proposed EnDeep4mC model.
 
 ## prepare
-Definitions for pre-training base models. The files prepare_dl.py and prepare_ml.py are from the open-source code of the EnDeep4mC work. We referenced the data processing functions for DNA sequences.
-- prepare_dl.py: A configuration file related to deep learning in the EnDeep4mC project. This experiment mainly uses some of its data processing functions.
-- prepare_ml.py: A configuration file related to machine learning in the EnDeep4mC project. This experiment mainly uses some of its data processing functions.
-- pretrain_base_models_5cv: Pre-training scripts for base models with dynamic feature selection strategies across 6 species (5-fold cross-validation).
-- pretrain_base_models_indiv: Pre-training scripts for base models with dynamic feature selection strategies across 6 species (independent test set validation).
+The files prepare_dl.py and prepare_ml.py are from the open-source codes of EpiTEAmDNA. We referenced the data processing scripts for DNA sequences.
+- prepare_dl.py: Configuration file related to deep learning in DNA 4mC prediction.
+- prepare_ml.py: Configuration file related to machine learning in DNA 4mC prediction.
+
+## pretrain
+- pretrain_base_models_5cv: Pre-training scripts for models with dynamic feature selection strategies(5-fold cross-validation).
+- pretrain_base_models_indiv: Pre-training scripts for models with dynamic feature selection strategies(independent test set validation).
 
 ## pretrained_models
-Stores pre-trained models (.h5) from the prepare and models modules.
+Stores pre-trained models (.h5 for base models and .pkl for ensemble) from the training scripts.
 - 5cv: Stores all pre-trained models using 5-fold cross-validation.
 - indiv: Stores all pre-trained models using independent test set validation.
 
@@ -98,7 +99,7 @@ Some supplementary tools involved in this study, only used for evaluation testin
 - tools.py: Originally supplementary tools in the EnDeep4mC project, including functions such as t-sne visualization.
 
 ## web_server
-A web server built based on the proposed EnDeep4mC model, which can be used online by users.
+A web server built based on the proposed EnDeep4mC and 5-fold cross-validation strategy, which can be used online for DNA 4mC site prediction.
 
 ## Software Availability
 - Web Server Access: http://lab.malab.cn/~lxm/EnDeep4mC

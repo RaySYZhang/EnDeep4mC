@@ -3,134 +3,354 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EnDeep4mC Predictor</title>
+    <title>EnDeep4mC WebServer</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
 </head>
-<body>
-    <div class="header">
-        <h1>EnDeep4mC: 4mC Site Prediction</h1>
-        <p>A deep learning ensemble predictor for DNA 4mC modification sites. Combines CNN, BLSTM and Transformer models with advanced feature engineering.</p>
+<body class="body">
+    <!-- Header Section -->
+    <div class="bgDiv">
+        <div class="p1">
+            <em style="font-style: italic; font-weight: bold;">EnDeep4mC</em>: A dual-adaptive feature encoding framework in deep ensembles for predicting DNA N4-methylcytosine sites
+        </div>
+        <div class="p4" style="text-align: center; color: #000000; padding: 10px;">
+            A deep learning ensemble predictor for DNA 4mC modification sites.
+            <br>Combines CNN, BLSTM and Transformer models with advanced feature engineering.
+        </div>
     </div>
 
-    <div class="main-content">
-        <form id="sequenceForm">
-            <div class="form-group">
-                <label for="speciesSelect">Target Species:</label>
-                <select id="speciesSelect" required>
-                    <option value="4mC_A.thaliana">Arabidopsis thaliana</option>
-                    <option value="4mC_C.elegans">Caenorhabditis elegans</option>
-                    <option value="4mC_D.melanogaster">Drosophila melanogaster</option>
-                    <option value="4mC_E.coli">Escherichia coli</option>
-                    <option value="4mC_G.subterraneus">Geobacter subterraneus</option>
-                    <option value="4mC_G.pickeringii">Geobacter pickeringii</option>
-                </select>
+    <!-- Navigation Bar -->
+    <div class="nav-bar" style="background-color: #1e90ff; padding: 10px; margin-top: 5px;">
+        <ul style="list-style-type: none; margin: 0; padding: 0; text-align: center;">
+            <li style="display: inline-block; margin: 0 20px;">
+                <a href="http://lab.malab.cn/~lxm/EnDeep4mC" target="_self" style="color: white; text-decoration: none; font-size: 20px;">Home</a>
+            </li>
+            <li style="display: inline-block; margin: 0 20px;">
+                <a href="#" style="color: white; text-decoration: none; font-size: 20px; background-color: #0056b3; padding: 5px 10px; border-radius: 4px; font-weight: bold;">Predictor</a>
+            </li>
+            <li style="display: inline-block; margin: 0 20px;">
+                <a href="#model-details" style="color: white; text-decoration: none; font-size: 20px;">Model Architecture Details</a>
+            </li>
+            <li style="display: inline-block; margin: 0 20px;">
+                <a href="#samples" style="color: white; text-decoration: none; font-size: 20px;">Example FASTA Samples</a>
+            </li>
+            <li style="display: inline-block; margin: 0 20px;">
+                <a href="{{ url_for('static', filename='test_samples.txt') }}" 
+                download="test_samples.txt"
+                style="color: white; text-decoration: none; font-size: 20px; background-color: #17a2b8; padding: 5px 10px; border-radius: 4px; font-weight: bold;">
+                    ⬇️ Download Test Samples
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Main Content -->
+    <div class="middle" style="padding: 20px;">
+        <!-- Predictor 标题 -->
+        <div style="text-align: center; margin-bottom: 30px;">
+            <div class="p2" style="color: #000000; margin-bottom: 10px;">
+                Predictor
             </div>
+        </div>
 
-            <div class="form-group">
-                <label for="sequenceInput">DNA Sequence Input:</label>
-                <textarea 
-                    id="sequenceInput" 
-                    rows="6" 
-                    placeholder="Paste FASTA sequences here (e.g. >seq1\nATCGATCG...)"
-                ></textarea>
-            </div>
-
-            <div class="form-group">
-                <label for="sequenceFile">Or Upload FASTA File:</label>
-                <input type="file" id="sequenceFile" accept=".fasta,.txt">
-            </div>
-
-            <button type="submit">Analyze Sequences</button>
-        </form>
-
-        <div id="result"></div>
-
-        <div class="model-details">
-            <h2>Model Architecture Details</h2>
-            <div class="detail-grid">
-                <div class="detail-card">
-                    <h4>🧬 Ensemble Framework</h4>
-                    <ul class="feature-list">
-                        <li>✔️ CNN</li>
-                        <li>✔️ Bidirectional LSTM</li>
-                        <li>✔️ Transformer</li>
-                        <li>✔️ 3 Layer of Stacking Ensemble:</li>
-                        <li> • Multimodal probability generation layer</li>
-                        <li> • Meta-learning Layer(XGBoost+LightGBM)</li>
-                        <li> • ElasticNet decision fusion layer</li>
-                    </ul>
+        <!-- 表单区域 -->
+        <div style="background: white; padding: 25px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); margin-bottom: 30px; border: 1px solid #eaeaea;">
+            <form id="sequenceForm">
+                <div style="margin-bottom: 25px;">
+                    <label for="speciesSelect" style="display: block; font-size: 20px; font-weight: bold; margin-bottom: 10px; color: #0056b3;">Target Species:</label>
+                    <select id="speciesSelect" required style="width: 100%; padding: 12px; font-size: 18px; border: 2px solid #1e90ff; border-radius: 6px; font-family: 'Times New Roman', Times, serif;">
+                        <option value="4mC_A.thaliana">Arabidopsis thaliana</option>
+                        <option value="4mC_C.elegans">Caenorhabditis elegans</option>
+                        <option value="4mC_D.melanogaster">Drosophila melanogaster</option>
+                        <option value="4mC_E.coli">Escherichia coli</option>
+                        <option value="4mC_G.subterraneus">Geobacter subterraneus</option>
+                        <option value="4mC_G.pickeringii">Geobacter pickeringii</option>
+                    </select>
                 </div>
 
-                <div class="detail-card">
-                    <h4>⚙️ Dual-Adaptive Encoding</h4>
-                    <ul class="feature-list">
-                        <li class="full-width">14 Feature Encodings:
-                            <div class="encoding-grid">
-                                <span>• ENAC</span>
-                                <span>• Binary</span>
-                                <span>• NCP</span>
-                                <span>• EIIP</span>
-                                <span>• Kmer (k=4)</span>
-                                <span>• CKSNAP</span>
-                                <span>• PseEIIP</span>
-                                <span>• TNC</span>
-                                <span>• RCKmer</span>
-                                <span>• SCPseTNC</span>
-                                <span>• PCPseTNC</span>
-                                <span>• ANF</span>
-                                <span>• NAC</span>
-                                <span>• TAC</span>
-                            </div>
-                        </li>
-                        <div class="dual-adaptive">
-                            <div class="adaptive-section">
-                                <div class="adaptive-title">🌐 Species-Adaptive:</div>
-                                <div>• Species-specific feature ranking</div>
-                            </div>
-                            <div class="adaptive-section">
-                                <div class="adaptive-title">🤖 Model-Adaptive:</div>
-                                <div>• Models-specific feature processing</div>
-                            </div>
-                        </div>
-                    </ul>
+                <div style="margin-bottom: 25px;">
+                    <label for="sequenceInput" style="display: block; font-size: 20px; font-weight: bold; margin-bottom: 10px; color: #0056b3;">DNA Sequence Input:</label>
+                    <textarea 
+                        id="sequenceInput" 
+                        rows="8" 
+                        placeholder="Paste FASTA sequences here (e.g. >seq1\nATCGATCG...)"
+                        style="width: 100%; padding: 12px; font-size: 18px; border: 2px solid #1e90ff; border-radius: 6px; font-family: 'Courier New', Courier, monospace; resize: vertical;"
+                    ></textarea>
                 </div>
 
-                <div class="detail-card">
-                    <h4>📊 Performance Metrics</h4>
-                    <ul class="feature-list">
-                        <li>Tested on 6 species</li>
-                        <li>AUC: <span class="metric-range">0.9629~0.9999</span>
-                            <span class="metric-average">0.9835 (Average)</span></li>
-                        <li>ACC: <span class="metric-range">0.9023~0.9974</span>
-                            <span class="metric-average">0.9472 (Average)</span></li>
-                        <li>F1-Score: 
-                            <span class="metric-average">0.9474 (Average)</span></li>
-                        <li>MCC: 
-                            <span class="metric-average">0.8945 (Average)</span></li>
-                    </ul>
+                <div style="margin-bottom: 30px;">
+                    <label for="sequenceFile" style="display: block; font-size: 20px; font-weight: bold; margin-bottom: 10px; color: #0056b3;">Or Upload FASTA File:</label>
+                    <input type="file" id="sequenceFile" accept=".fasta,.txt" 
+                           style="width: 100%; padding: 12px; font-size: 18px; border: 2px solid #1e90ff; border-radius: 6px;">
+                </div>
+
+                <div style="text-align: center;">
+                    <button type="submit" class="enabled1" style="font-size: 22px; padding: 15px 40px;">
+                        Analyze Sequences
+                    </button>
+                    <button type="button" id="clearButton" class="enabled1" 
+                            style="font-size: 22px; padding: 15px 40px; margin-left: 20px;">
+                        Clear Form
+                    </button>
+                </div>
+            </form>
+        </div>
+
+        <!-- Variable-Length Processing Information -->
+        <div id="processing-info" style="background: #f0f7ff; padding: 20px; border-radius: 8px; margin: 20px 0; border-left: 4px solid #1e90ff;">
+            <h3 style="color: #0056b3; font-size: 22px; margin-bottom: 15px; display: flex; align-items: center;">
+                <span style="background: #1e90ff; color: white; padding: 5px 10px; border-radius: 4px; margin-right: 10px;">ℹ️</span>
+                Variable-Length Sequence Processing
+            </h3>
+            <p style="font-size: 18px; color: #333; margin-bottom: 15px;">
+                <strong>EnDeep4mC</strong> can process DNA sequences of any length (20-100,000 bp) using the following pipeline:
+            </p>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 15px;">
+                <div style="background: white; padding: 15px; border-radius: 6px; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+                    <div style="font-weight: bold; color: #1e90ff; margin-bottom: 8px; font-size: 18px;">1. Length Standardization</div>
+                    <div style="font-size: 16px; color: #555;">All sequences are standardized to 41bp windows through appropriate padding or segmentation</div>
+                </div>
+                <div style="background: white; padding: 15px; border-radius: 6px; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+                    <div style="font-weight: bold; color: #1e90ff; margin-bottom: 8px; font-size: 18px;">2. Cytosine Filtering</div>
+                    <div style="font-size: 16px; color: #555;">Only windows with cytosine (C) at the center position are analyzed for 4mC prediction</div>
+                </div>
+                <div style="background: white; padding: 15px; border-radius: 6px; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+                    <div style="font-weight: bold; color: #1e90ff; margin-bottom: 8px; font-size: 18px;">3. Sliding Window Analysis</div>
+                    <div style="font-size: 16px; color: #555;">Long sequences are analyzed using overlapping 41bp windows with 1bp step size</div>
+                </div>
+                <div style="background: white; padding: 15px; border-radius: 6px; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+                    <div style="font-weight: bold; color: #1e90ff; margin-bottom: 8px; font-size: 18px;">4. Ensemble Prediction</div>
+                    <div style="font-size: 16px; color: #555;">Each 41bp window is analyzed by CNN, BLSTM, and Transformer ensemble</div>
+                </div>
+            </div>
+            <div style="margin-top: 15px; font-size: 16px; color: #666; padding: 10px; background: #e8f4ff; border-radius: 4px;">
+                <strong>Note:</strong> For sequences longer than 41bp, predictions are averaged per cytosine position to provide robust methylation likelihood scores.
+            </div>
+        </div>
+
+        <!-- 结果展示区域 -->
+        <div id="result" style="margin-bottom: 40px;"></div>
+
+        <!-- Model Architecture Details -->
+        <div id="model-details" style="margin: 40px 0;">
+            <h2 style="color: #0056b3; border-bottom: 2px solid #1e90ff; padding-bottom: 10px; margin-bottom: 20px; font-size: 28px; text-align: center;">
+                Model Architecture Details
+            </h2>
+
+            <!-- Table 1: Architecture and Hyperparameters of Base Deep Learning Models -->
+            <div style="margin-bottom: 40px;">
+                <h3 style="color: #0056b3; font-size: 24px; margin-bottom: 15px; text-align: center;">
+                    Table 1. Architecture and Hyperparameters of Base Deep Learning Models
+                </h3>
+                <div style="overflow-x: auto;">
+                    <table style="width: 100%; border-collapse: collapse; border: 1px solid #ddd; border-radius: 6px; overflow: hidden; box-shadow: 0 2px 4px rgba(0,0,0,0.05); background-color: white;">
+                        <thead>
+                            <tr style="background-color: #f5f5f5; border-bottom: 2px solid #ddd;">
+                                <th style="padding: 15px; text-align: center; font-size: 18px; border-right: 1px solid #ddd; font-weight: bold; color: #333;">Component</th>
+                                <th style="padding: 15px; text-align: center; font-size: 18px; border-right: 1px solid #ddd; font-weight: bold; color: #333;">CNN</th>
+                                <th style="padding: 15px; text-align: center; font-size: 18px; border-right: 1px solid #ddd; font-weight: bold; color: #333;">Bi-LSTM</th>
+                                <th style="padding: 15px; text-align: center; font-size: 18px; font-weight: bold; color: #333;">Transformer</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td style="padding: 12px; border: 1px solid #ddd; font-size: 17px; font-weight: bold; color: #555; background-color: #fafafa;">Input</td>
+                                <td style="padding: 12px; border: 1px solid #ddd; font-size: 17px; font-family: 'Courier New', monospace; color: #333;">(1, feature_dim)</td>
+                                <td style="padding: 12px; border: 1px solid #ddd; font-size: 17px; font-family: 'Courier New', monospace; color: #333;">(1, feature_dim)</td>
+                                <td style="padding: 12px; border: 1px solid #ddd; font-size: 17px; font-family: 'Courier New', monospace; color: #333;">(None, feature_dim)</td>
+                            </tr>
+                            <tr style="background-color: #f9f9f9;">
+                                <td style="padding: 12px; border: 1px solid #ddd; font-size: 17px; font-weight: bold; color: #555;">Layer 1</td>
+                                <td style="padding: 12px; border: 1px solid #ddd; font-size: 17px; font-family: 'Courier New', monospace; color: #333;">Conv1D(256,1)+BN</td>
+                                <td style="padding: 12px; border: 1px solid #ddd; font-size: 17px; font-family: 'Courier New', monospace; color: #333;">BiLSTM(128)</td>
+                                <td style="padding: 12px; border: 1px solid #ddd; font-size: 17px; font-family: 'Courier New', monospace; color: #333;">MultiHead(8 heads)</td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 12px; border: 1px solid #ddd; font-size: 17px; font-weight: bold; color: #555; background-color: #fafafa;">Layer 2</td>
+                                <td style="padding: 12px; border: 1px solid #ddd; font-size: 17px; font-family: 'Courier New', monospace; color: #333;">SepConv1D(128,3)+Pool</td>
+                                <td style="padding: 12px; border: 1px solid #ddd; font-size: 17px; font-family: 'Courier New', monospace; color: #333;">BN</td>
+                                <td style="padding: 12px; border: 1px solid #ddd; font-size: 17px; font-family: 'Courier New', monospace; color: #333;">FFN(512)+LayerNorm</td>
+                            </tr>
+                            <tr style="background-color: #f9f9f9;">
+                                <td style="padding: 12px; border: 1px solid #ddd; font-size: 17px; font-weight: bold; color: #555;">Layer 3</td>
+                                <td style="padding: 12px; border: 1px solid #ddd; font-size: 17px; font-family: 'Courier New', monospace; color: #333;">Conv1D(64,1)</td>
+                                <td style="padding: 12px; border: 1px solid #ddd; font-size: 17px; font-family: 'Courier New', monospace; color: #333;">BiLSTM(64)</td>
+                                <td style="padding: 12px; border: 1px solid #ddd; font-size: 17px; font-family: 'Courier New', monospace; color: #333;">2 encoder layers</td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 12px; border: 1px solid #ddd; font-size: 17px; font-weight: bold; color: #555; background-color: #fafafa;">Pooling</td>
+                                <td style="padding: 12px; border: 1px solid #ddd; font-size: 17px; font-family: 'Courier New', monospace; color: #333;">GlobalMaxPool</td>
+                                <td style="padding: 12px; border: 1px solid #ddd; font-size: 17px; font-family: 'Courier New', monospace; color: #333;">-</td>
+                                <td style="padding: 12px; border: 1px solid #ddd; font-size: 17px; font-family: 'Courier New', monospace; color: #333;">GlobalAvgPool</td>
+                            </tr>
+                            <tr style="background-color: #f9f9f9;">
+                                <td style="padding: 12px; border: 1px solid #ddd; font-size: 17px; font-weight: bold; color: #555;">Dense</td>
+                                <td style="padding: 12px; border: 1px solid #ddd; font-size: 17px; font-family: 'Courier New', monospace; color: #333;">Dense(128)</td>
+                                <td style="padding: 12px; border: 1px solid #ddd; font-size: 17px; font-family: 'Courier New', monospace; color: #333;">Dense(64)</td>
+                                <td style="padding: 12px; border: 1px solid #ddd; font-size: 17px; font-family: 'Courier New', monospace; color: #333;">Dense(128)</td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 12px; border: 1px solid #ddd; font-size: 17px; font-weight: bold; color: #555; background-color: #fafafa;">Output</td>
+                                <td style="padding: 12px; border: 1px solid #ddd; font-size: 17px; font-family: 'Courier New', monospace; color: #333;">Dense(1, sigmoid)</td>
+                                <td style="padding: 12px; border: 1px solid #ddd; font-size: 17px; font-family: 'Courier New', monospace; color: #333;">Dense(1, sigmoid)</td>
+                                <td style="padding: 12px; border: 1px solid #ddd; font-size: 17px; font-family: 'Courier New', monospace; color: #333;">Dense(1, sigmoid)</td>
+                            </tr>
+                            <tr style="background-color: #f9f9f9;">
+                                <td style="padding: 12px; border: 1px solid #ddd; font-size: 17px; font-weight: bold; color: #555;">Regularization</td>
+                                <td style="padding: 12px; border: 1px solid #ddd; font-size: 17px; font-family: 'Courier New', monospace; color: #333;">L2(0.001), Drop(0.3)</td>
+                                <td style="padding: 12px; border: 1px solid #ddd; font-size: 17px; font-family: 'Courier New', monospace; color: #333;">L2(0.001), Drop(0.2), RecDrop(0.1)</td>
+                                <td style="padding: 12px; border: 1px solid #ddd; font-size: 17px; font-family: 'Courier New', monospace; color: #333;">L2(0.001), Drop(0.1)</td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 12px; border: 1px solid #ddd; font-size: 17px; font-weight: bold; color: #555; background-color: #fafafa;">Optimizer</td>
+                                <td style="padding: 12px; border: 1px solid #ddd; font-size: 17px; font-family: 'Courier New', monospace; color: #333;">Adam(lr=0.001, clip=1.0)</td>
+                                <td style="padding: 12px; border: 1px solid #ddd; font-size: 17px; font-family: 'Courier New', monospace; color: #333;">Adam(lr=0.001, clip=1.0)</td>
+                                <td style="padding: 12px; border: 1px solid #ddd; font-size: 17px; font-family: 'Courier New', monospace; color: #333;">Adam(lr=0.001)</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
 
-            <!-- Architecture Diagram Section -->
-            <div class="architecture-container">
-                <img src="{{ url_for('static', filename='Model Architecture Diagram.png') }}" 
-                     alt="Model Architecture Diagram"
-                     class="architecture-diagram">
-                <div class="diagram-caption">
-                    Integrated Deep Learning Architecture with Dual-Adaptive Encoding System
+            <!-- Table 2: Configuration of Ensemble Learning Framework -->
+            <div style="margin-bottom: 40px;">
+                <h3 style="color: #0056b3; font-size: 24px; margin-bottom: 15px; text-align: center;">
+                    Table 2. Configuration of Ensemble Learning Framework
+                </h3>
+                <div style="overflow-x: auto;">
+                    <table style="width: 100%; border-collapse: collapse; border: 1px solid #ddd; border-radius: 6px; overflow: hidden; box-shadow: 0 2px 4px rgba(0,0,0,0.05); background-color: white;">
+                        <thead>
+                            <tr style="background-color: #f5f5f5; border-bottom: 2px solid #ddd;">
+                                <th style="padding: 15px; text-align: center; font-size: 18px; border-right: 1px solid #ddd; font-weight: bold; color: #333;">Component</th>
+                                <th style="padding: 15px; text-align: center; font-size: 18px; border-right: 1px solid #ddd; font-weight: bold; color: #333;">XGBoost Configuration</th>
+                                <th style="padding: 15px; text-align: center; font-size: 18px; border-right: 1px solid #ddd; font-weight: bold; color: #333;">LightGBM Configuration</th>
+                                <th style="padding: 15px; text-align: center; font-size: 18px; font-weight: bold; color: #333;">Meta-Learner Configuration</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td style="padding: 12px; border: 1px solid #ddd; font-size: 17px; font-weight: bold; color: #555; background-color: #fafafa;">Model Type</td>
+                                <td style="padding: 12px; border: 1px solid #ddd; font-size: 17px; font-family: 'Courier New', monospace; color: #333;">XGBClassifier</td>
+                                <td style="padding: 12px; border: 1px solid #ddd; font-size: 17px; font-family: 'Courier New', monospace; color: #333;">LGBMClassifier</td>
+                                <td style="padding: 12px; border: 1px solid #ddd; font-size: 17px; font-family: 'Courier New', monospace; color: #333;">LogisticRegression</td>
+                            </tr>
+                            <tr style="background-color: #f9f9f9;">
+                                <td style="padding: 12px; border: 1px solid #ddd; font-size: 17px; font-weight: bold; color: #555;">Number of Trees</td>
+                                <td style="padding: 12px; border: 1px solid #ddd; font-size: 17px; font-family: 'Courier New', monospace; color: #333;">n_estimators=500</td>
+                                <td style="padding: 12px; border: 1px solid #ddd; font-size: 17px; font-family: 'Courier New', monospace; color: #333;">n_estimators=300</td>
+                                <td style="padding: 12px; border: 1px solid #ddd; font-size: 17px; font-family: 'Courier New', monospace; color: #333;">-</td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 12px; border: 1px solid #ddd; font-size: 17px; font-weight: bold; color: #555; background-color: #fafafa;">Learning Rate</td>
+                                <td style="padding: 12px; border: 1px solid #ddd; font-size: 17px; font-family: 'Courier New', monospace; color: #333;">0.05</td>
+                                <td style="padding: 12px; border: 1px solid #ddd; font-size: 17px; font-family: 'Courier New', monospace; color: #333;">0.05</td>
+                                <td style="padding: 12px; border: 1px solid #ddd; font-size: 17px; font-family: 'Courier New', monospace; color: #333;">-</td>
+                            </tr>
+                            <tr style="background-color: #f9f9f9;">
+                                <td style="padding: 12px; border: 1px solid #ddd; font-size: 17px; font-weight: bold; color: #555;">Depth</td>
+                                <td style="padding: 12px; border: 1px solid #ddd; font-size: 17px; font-family: 'Courier New', monospace; color: #333;">max_depth=7</td>
+                                <td style="padding: 12px; border: 1px solid #ddd; font-size: 17px; font-family: 'Courier New', monospace; color: #333;">num_leaves=63</td>
+                                <td style="padding: 12px; border: 1px solid #ddd; font-size: 17px; font-family: 'Courier New', monospace; color: #333;">-</td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 12px; border: 1px solid #ddd; font-size: 17px; font-weight: bold; color: #555; background-color: #fafafa;">Regularization</td>
+                                <td style="padding: 12px; border: 1px solid #ddd; font-size: 17px; font-family: 'Courier New', monospace; color: #333;">gamma=0.1, subsample=0.8</td>
+                                <td style="padding: 12px; border: 1px solid #ddd; font-size: 17px; font-family: 'Courier New', monospace; color: #333;">reg_alpha=0.2, reg_lambda=0.2</td>
+                                <td style="padding: 12px; border: 1px solid #ddd; font-size: 17px; font-family: 'Courier New', monospace; color: #333;">C=0.6, l1_ratio=0.5</td>
+                            </tr>
+                            <tr style="background-color: #f9f9f9;">
+                                <td style="padding: 12px; border: 1px solid #ddd; font-size: 17px; font-weight: bold; color: #555;">Others</td>
+                                <td style="padding: 12px; border: 1px solid #ddd; font-size: 17px; font-family: 'Courier New', monospace; color: #333;">colsample_bytree=0.8</td>
+                                <td style="padding: 12px; border: 1px solid #ddd; font-size: 17px; font-family: 'Courier New', monospace; color: #333;">min_child_samples=20</td>
+                                <td style="padding: 12px; border: 1px solid #ddd; font-size: 17px; font-family: 'Courier New', monospace; color: #333;">penalty='elasticnet', solver='saga'</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
         </div>
 
-        <div class="sample-sequences">
-            <h3>Example FASTA Format</h3>
-            <pre>>Sample_Sequence_1
+        <!-- Architecture Diagram Section -->
+        <div style="text-align: center; margin: 40px 0;">
+            <h3 style="color: #0056b3; font-size: 26px; margin-bottom: 20px; border-bottom: 2px solid #1e90ff; padding-bottom: 10px; display: inline-block;">
+                Model Architecture Diagram
+            </h3>
+            <div style="background: white; padding: 25px; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); max-width: 1100px; margin: 0 auto;">
+                <img src="{{ url_for('static', filename='Model Architecture Diagram.png') }}" 
+                     alt="Model Architecture Diagram"
+                     style="width: 100%; height: auto; border-radius: 6px; border: 1px solid #ddd;">
+            </div>
+            <p style="margin-top: 15px; color: #666; font-size: 18px;">
+                Integrated Deep Learning Architecture with Dual-Adaptive Encoding System
+            </p>
+        </div>
+
+        <!-- Sample Sequences Section -->
+        <div id="samples" style="background: white; padding: 25px; border-radius: 8px; margin-top: 30px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); border: 1px solid #eaeaea;">
+            <h3 style="color: #0056b3; font-size: 26px; margin-bottom: 20px; text-align: center;">Example FASTA Format</h3>
+            <pre style="background: #f8f9fa; padding: 20px; border-radius: 6px; font-size: 20px; overflow-x: auto; font-family: 'Courier New', Courier, monospace; text-align: left;">
+>Sample_Sequence_1 (41bp)
 ATGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGC
->Sample_Sequence_2
-CGATCGATCGATCGATCGATCGATCGATCGATCGATCGATCGA</pre>
+>Sample_Sequence_2 (50bp)
+CGATCGATCGATCGATCGATCGATCGATCGATCGATCGATCGATCGATCGA
+>Sample_Sequence_3 (30bp)
+ATCGATCGATCGATCGATCGATCGATCGAT</pre>
+            
+            <div style="margin-top: 20px; padding: 15px; background: #f0f7ff; border-radius: 6px;">
+                <p style="font-size: 18px; color: #333; margin-bottom: 10px;">
+                    <strong>Variable-Length Examples:</strong> The webserver accepts sequences of any length (20-100,000 bp). 
+                    Short sequences will be standardized to 41bp, and long sequences will be analyzed using sliding windows.
+                </p>
+            </div>
+            
+            <div style="text-align: center; margin-top: 20px;">
+                <a href="{{ url_for('static', filename='test_samples.txt') }}" 
+                download="test_samples.txt" 
+                style="display: inline-block; background-color: #17a2b8; color: white; padding: 12px 25px; 
+                        font-size: 20px; border-radius: 6px; text-decoration: none; font-weight: bold;
+                        border-bottom: 3px solid #138496; transition: all 0.3s;">
+                    ⬇️ Download Test Samples
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="p3"><em style="font-style: italic; font-weight: bold;">EnDeep4mC</em>: Ensemble Deep Learning for 4mC Site Prediction</div>
+        <div class="footer-info" style="font-size: 14px; color: rgba(255, 255, 255, 0.9); line-height: 1.6;">
+            Bioinformatics Research Group, UESTC<br>
+            If you have any questions, please contact: 
+            <a href="mailto:frank.shuyu@outlook.com" style="color: #7BC1FF; text-decoration: none;">
+                frank.shuyu@outlook.com
+            </a>
         </div>
     </div>
 
     <script src="{{ url_for('static', filename='script.js') }}"></script>
+    <script>
+        // 清空表单功能
+        document.getElementById('clearButton').addEventListener('click', function() {
+            document.getElementById('sequenceInput').value = '';
+            document.getElementById('sequenceFile').value = '';
+            document.getElementById('result').innerHTML = '';
+        });
+        
+        // 为导航链接添加平滑滚动
+        document.querySelectorAll('.nav-bar a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                if (this.getAttribute('href') !== '#') {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href').substring(1);
+                    const targetElement = document.getElementById(targetId);
+                    if (targetElement) {
+                        window.scrollTo({
+                            top: targetElement.offsetTop - 80,
+                            behavior: 'smooth'
+                        });
+                    }
+                }
+            });
+        });
+    </script>
 </body>
 </html>
