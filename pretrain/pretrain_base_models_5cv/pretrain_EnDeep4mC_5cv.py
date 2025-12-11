@@ -40,7 +40,7 @@ warnings.filterwarnings("ignore")
 
 # Set up project paths
 current_dir = os.path.dirname(os.path.abspath(__file__))
-project_dir = os.path.dirname(os.path.dirname(current_dir))  # Go up two levels to project root
+project_dir = os.path.dirname(current_dir)
 sys.path.append(project_dir)
 
 from prepare.prepare_ml import ml_code, read_fasta_data
