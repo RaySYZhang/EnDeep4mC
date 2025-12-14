@@ -1,4 +1,4 @@
-name: tf25_gpu
+name: EnDeep4mC
 channels:
   - conda-forge
   - https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main
@@ -101,4 +101,5 @@ dependencies:
       - wrapt==1.12.1
       - xgboost==1.6.2
       - zipp==3.20.2
-prefix: //your_path/envs/anaconda3/envs/tf25_gpu
+# replace with your local conda environment path
+prefix: //your_path/envs/EnDeep4mC
